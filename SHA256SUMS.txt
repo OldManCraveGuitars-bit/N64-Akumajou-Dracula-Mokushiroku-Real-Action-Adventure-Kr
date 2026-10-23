@@ -1,0 +1,6 @@
+b3cd72378da56d64203514d1ed7b3b989d167801cbe493b18f928feaf284fdf5  N64-Akumajou-Dracula-Mokushiroku-Kr-v0.6-Patcher.exe
+bd02ecff7a716a2adde077f2741cfbdbf89ca4a8d7e79252066d2ad37b428af7  Akumajou-Dracula-Mokushiroku-Korean-v0.6.bps
+e67df5916e7378b55a4a919979d5b101459e12e89796b71d6f89fb4719dfb83b  N64-Akumajou-Dracula-Mokushiroku-Kr-v0.6-Windows.zip
+4a75438f38a4194f3c05c59d8961368557c985fd9ddf7d2351008bf92b1a7988  Text-Tool-v0.6.zip
+7ac3e49a621077d00a269901acb779956f70260551c4a9417eecb6d5dd035eeb  Screenshots-v0.6.zip
+0cd50685f943b1c5ecb093701b6dea0ea51733b916a736dc6fcc9f275b4e07ac  verification-v0.6.json

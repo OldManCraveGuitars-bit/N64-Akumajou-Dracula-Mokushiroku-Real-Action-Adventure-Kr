@@ -1,0 +1,1780 @@
+[
+  {
+    "id": 0,
+    "reference_name": "ni_6F3BD0",
+    "vram": 50331648,
+    "size": 944,
+    "sha256": "dae8281fc14e11b381d82ae7474fa6725245c2c5774924ea90cba073285d6d69"
+  },
+  {
+    "id": 1,
+    "reference_name": "ni_debug_font_texture",
+    "vram": 100663296,
+    "size": 2048,
+    "sha256": "29fe421f9a1704115ec6113537df19f2ea76335bbd0d83fdaf1bb1f7b10d4b38"
+  },
+  {
+    "id": 2,
+    "reference_name": "ni_reinhardt",
+    "vram": 100663296,
+    "size": 32688,
+    "sha256": "9acd5599ce58c29720e297ac50a477e1050147940cd330ccefbda2d40742b2c3"
+  },
+  {
+    "id": 3,
+    "reference_name": "ni_reinhardt_alt",
+    "vram": 100663296,
+    "size": 36336,
+    "sha256": "bae6b239988ad935ee3ebb5d540eb384efc94a1fb6fa9ad4c2a590acda7d84d7"
+  },
+  {
+    "id": 4,
+    "reference_name": "ni_whip",
+    "vram": 100663296,
+    "size": 1424,
+    "sha256": "7b882b01c1ed33258ca49c72958c1763f61196ab736f9a86479fa56f0e2251b8"
+  },
+  {
+    "id": 5,
+    "reference_name": "ni_carrie",
+    "vram": 100663296,
+    "size": 29872,
+    "sha256": "701cf0aa1e968de8b57486e041110da7cc9f29d33c3c8e97fd6a5998fc676d8d"
+  },
+  {
+    "id": 6,
+    "reference_name": "ni_carrie_alt",
+    "vram": 100663296,
+    "size": 26096,
+    "sha256": "b579b6d3ca1cb668344818066f593bda5b819f4c11e1dde06cd012c3d1ee78b4"
+  },
+  {
+    "id": 7,
+    "reference_name": "ni_enemy_target_graphic",
+    "vram": 100663296,
+    "size": 1072,
+    "sha256": "d999bb6c67e01d77259d1b0187e3bfe144e1f69da631e2044913bcc4d571d903"
+  },
+  {
+    "id": 8,
+    "reference_name": "ni_beta_3_head_wolf",
+    "vram": 100663296,
+    "size": 20432,
+    "sha256": "8ad31a7607c8891ce9fe4168fa49ecb93a4fc8aac9d21075ec1f4c7818d25908"
+  },
+  {
+    "id": 9,
+    "reference_name": "ni_cerberus",
+    "vram": 100663296,
+    "size": 18304,
+    "sha256": "0725bd71cd5fa2c39ffa449630fd11d762586469acd8840ebfa0bfe5e070cef7"
+  },
+  {
+    "id": 10,
+    "reference_name": "ni_white_dragon",
+    "vram": 100663296,
+    "size": 11840,
+    "sha256": "243b3cb9c4d748f2a75d4c5d780d087c4b3f211ed2da1b3262d3614e26cb445b"
+  },
+  {
+    "id": 11,
+    "reference_name": "ni_gardener",
+    "vram": 100663296,
+    "size": 18112,
+    "sha256": "85740dff339a71d36b2deeb803dae2458005decf20316a05e08bc38645f699e3"
+  },
+  {
+    "id": 12,
+    "reference_name": "ni_stone_dog",
+    "vram": 100663296,
+    "size": 13776,
+    "sha256": "c036751c726e2eebe80e7dec440e159f19257cdf4ab6917847a8be5971a7f574"
+  },
+  {
+    "id": 13,
+    "reference_name": "ni_behemoth",
+    "vram": 100663296,
+    "size": 63216,
+    "sha256": "1866674525668cb99a1f1f928cf5595d9429add93628489701735d7d8bf8a0bd"
+  },
+  {
+    "id": 14,
+    "reference_name": "ni_weretiger",
+    "vram": 100663296,
+    "size": 22864,
+    "sha256": "0a236e05e7546d9b957e90e556b1207860c9dc0beeb7c152d306f5473c242d03"
+  },
+  {
+    "id": 15,
+    "reference_name": "ni_werewolf",
+    "vram": 100663296,
+    "size": 16160,
+    "sha256": "ce3aaf85cb232cd321c820fc30a8bb9e8561ce85850215622664d8b87d848d23"
+  },
+  {
+    "id": 16,
+    "reference_name": "ni_hell_knight",
+    "vram": 100663296,
+    "size": 20112,
+    "sha256": "0c5ecc8fe4adf4f654d2477234f9633659a03baf53e2ede45321d3048f4818b8"
+  },
+  {
+    "id": 17,
+    "reference_name": "ni_ghost",
+    "vram": 100663296,
+    "size": 12144,
+    "sha256": "7f30b2328662a5a8d42ef81f8a7f6e26b290adbfa9bf75940647d54172b3e766"
+  },
+  {
+    "id": 18,
+    "reference_name": "ni_iceman_puddle",
+    "vram": 100663296,
+    "size": 19984,
+    "sha256": "4eb51bcfae84ccb5de48ca3d4e5fc8c4af6f40d1530e05fc05ef3af4ee846dbe"
+  },
+  {
+    "id": 19,
+    "reference_name": "ni_728A42",
+    "vram": 100663296,
+    "size": 9072,
+    "sha256": "ac8ae42ae003e6e408aad2f60ca61c8714191c6042668b54eab584d65b8585d5"
+  },
+  {
+    "id": 20,
+    "reference_name": "ni_72A16C",
+    "vram": 100663296,
+    "size": 12976,
+    "sha256": "28627db755120f03be00bc842111ebb764d628aa570f5bd6256f958d002c3a3f"
+  },
+  {
+    "id": 21,
+    "reference_name": "ni_iceman",
+    "vram": 100663296,
+    "size": 10624,
+    "sha256": "ce7c40a75c9aad64c38fc0777b68a0a8a9f73bff2f845e7de9ac11555778c7c5"
+  },
+  {
+    "id": 22,
+    "reference_name": "ni_fire_bat",
+    "vram": 100663296,
+    "size": 3632,
+    "sha256": "249e7885d69a1620250b7284ffc4d3a86ad5b50ace56926a83b09a695b0b3f81"
+  },
+  {
+    "id": 23,
+    "reference_name": "ni_flying_skull",
+    "vram": 100663296,
+    "size": 2832,
+    "sha256": "20272cc5d1cc97b348bbc47e0d1529c337602c3104ac4e667a96ca492be7b1b3"
+  },
+  {
+    "id": 24,
+    "reference_name": "ni_bat",
+    "vram": 100663296,
+    "size": 3600,
+    "sha256": "01f8977a5161b1c8de9983f99129ac2597cee0a5dfc0412dff1b896a89c25060"
+  },
+  {
+    "id": 25,
+    "reference_name": "ni_medusa_head",
+    "vram": 100663296,
+    "size": 5856,
+    "sha256": "4e05fc9885d3d7b3fad9908a29e7e179dc2c35ae79643fe849194319d9b7414b"
+  },
+  {
+    "id": 26,
+    "reference_name": "ni_pillar_of_bones",
+    "vram": 100663296,
+    "size": 7584,
+    "sha256": "6340475f0cb884a7a62e2463ee8b65519572a8f2f7095f3ab0e8305c7b0a3175"
+  },
+  {
+    "id": 27,
+    "reference_name": "ni_undead_maiden",
+    "vram": 100663296,
+    "size": 27232,
+    "sha256": "b335439883a9879f9ab2c55971aab96c74157e52cf5b18fa1d302a4879e90a47"
+  },
+  {
+    "id": 28,
+    "reference_name": "ni_vampire_maid",
+    "vram": 100663296,
+    "size": 21328,
+    "sha256": "35100dc61206a82549280f228ab8f29287774053471b49d98813ad366f113a25"
+  },
+  {
+    "id": 29,
+    "reference_name": "ni_vampire_villager",
+    "vram": 100663296,
+    "size": 28912,
+    "sha256": "cec7db8278709d59abed8d6b73107fac3f33ef919a5027b060825d66450c2c00"
+  },
+  {
+    "id": 30,
+    "reference_name": "ni_vampire_butler",
+    "vram": 100663296,
+    "size": 22432,
+    "sha256": "64f304d87b78907632f997b222c06fb9d9964b3bb152d890b28a55f5ca9953b1"
+  },
+  {
+    "id": 31,
+    "reference_name": "ni_vincent",
+    "vram": 100663296,
+    "size": 24832,
+    "sha256": "afe51055ee784e01a35ec3fbbd1969ae91a85c4e57eb51a9d6679267e71b4e64"
+  },
+  {
+    "id": 32,
+    "reference_name": "ni_werejaguar",
+    "vram": 100663296,
+    "size": 22368,
+    "sha256": "83929d766f8b8cc08f19cd1491b639145c8ebf4dd56b7eca361e43ab2beb7bd6"
+  },
+  {
+    "id": 33,
+    "reference_name": "ni_spider_centaur",
+    "vram": 100663296,
+    "size": 19872,
+    "sha256": "e61363e1e544fe08ce4b58e058a7c6b867c8921e537d08c218f55a7738edd66e"
+  },
+  {
+    "id": 34,
+    "reference_name": "ni_lizard_man",
+    "vram": 100663296,
+    "size": 32480,
+    "sha256": "9870ec9580862bfdf541888c1b76946a997ab2fb3177888345a6db80ff9caff1"
+  },
+  {
+    "id": 35,
+    "reference_name": "ni_skeleton_warrior",
+    "vram": 100663296,
+    "size": 16128,
+    "sha256": "8effee878262b082c914929cd62a85886ef63ab1ddfa69dd8e2e22fa6f7ac592"
+  },
+  {
+    "id": 36,
+    "reference_name": "ni_glass_knight",
+    "vram": 100663296,
+    "size": 11024,
+    "sha256": "0a82cffb37507971c5fbcec7685c7183a6c9270d02a22e984f49f5419d72fa09"
+  },
+  {
+    "id": 37,
+    "reference_name": "ni_king_skeleton",
+    "vram": 100663296,
+    "size": 20128,
+    "sha256": "40da67fb9e0d776eac745aed73cd98515d25adaaeadb1262d27620b3c72a542a"
+  },
+  {
+    "id": 38,
+    "reference_name": "ni_skeleton_biker",
+    "vram": 100663296,
+    "size": 34640,
+    "sha256": "53611c84655de9b36bce4134870b22b42c0340a85b1442685726cda3630c9f94"
+  },
+  {
+    "id": 39,
+    "reference_name": "ni_true_dracula",
+    "vram": 100663296,
+    "size": 42288,
+    "sha256": "ea6b8d9fd1aaff1ca5fb476580bab77ad8f48fe6144eace4c8d9326ed1311d48"
+  },
+  {
+    "id": 40,
+    "reference_name": "ni_malus",
+    "vram": 100663296,
+    "size": 35072,
+    "sha256": "461c63e987de139b8145e8e8d6f6cb0e494580094f2400831e490ca0530327e1"
+  },
+  {
+    "id": 41,
+    "reference_name": "ni_malus_horse",
+    "vram": 100663296,
+    "size": 29872,
+    "sha256": "bc5ece276b16c81bdd1a6a7b94a6c400d1481b985c4ea11f491320eef3f4c103"
+  },
+  {
+    "id": 42,
+    "reference_name": "ni_demon_dracula",
+    "vram": 100663296,
+    "size": 64080,
+    "sha256": "7f96f950580e3d0fcafe100b79f50977261a3e29100fece250e0c60f7104c173"
+  },
+  {
+    "id": 43,
+    "reference_name": "ni_dracula_cape",
+    "vram": 100663296,
+    "size": 49280,
+    "sha256": "e7b82ca328fb297057e6c81a21ecb6df1bf1abe484dc9744a24bf4bc959746be"
+  },
+  {
+    "id": 44,
+    "reference_name": "ni_renon",
+    "vram": 100663296,
+    "size": 25888,
+    "sha256": "6020e33c775a8038ed5e09d8c3be0aec60ce7dd4f570e83fa4d4297969b233ae"
+  },
+  {
+    "id": 45,
+    "reference_name": "ni_demon_renon",
+    "vram": 100663296,
+    "size": 41280,
+    "sha256": "701c33747597b1506b1d6cf51ea8a6ee66b601417a0228a66b261d0341c4e1a7"
+  },
+  {
+    "id": 46,
+    "reference_name": "ni_death",
+    "vram": 100663296,
+    "size": 30160,
+    "sha256": "1e0eabe8884f1c8df79c18edaf81dc2aabea2ca5e982a1e0eb8106d09a7b8773"
+  },
+  {
+    "id": 47,
+    "reference_name": "ni_demonic_fish",
+    "vram": 100663296,
+    "size": 20800,
+    "sha256": "dd21e9ec16b9f19b855baf2470f0bd6b933752d3f7514114555ab57e765260ff"
+  },
+  {
+    "id": 48,
+    "reference_name": "ni_rosa",
+    "vram": 100663296,
+    "size": 29664,
+    "sha256": "bdb8242ca1a7590dd86e3dd2980d1567f3d0b251a4665df1dcd8570c51caa47c"
+  },
+  {
+    "id": 49,
+    "reference_name": "ni_rosa_petals",
+    "vram": 100663296,
+    "size": 224,
+    "sha256": "653ee8b195482701f294ab0787f39feee0e39905f08f0de76d49a60fa17228c9"
+  },
+  {
+    "id": 50,
+    "reference_name": "ni_camilla",
+    "vram": 100663296,
+    "size": 26528,
+    "sha256": "1e810b2e103823827d56baaa9098460ecea0c62b926f7f1b1c5b9dab45014df3"
+  },
+  {
+    "id": 51,
+    "reference_name": "ni_actrise",
+    "vram": 100663296,
+    "size": 31504,
+    "sha256": "99d5b375a1e731bdb6c6461f6bfca28bce5769403df564c9308ed16a56f5f290"
+  },
+  {
+    "id": 52,
+    "reference_name": "ni_actrise_camilla_fight",
+    "vram": 100663296,
+    "size": 10576,
+    "sha256": "9fff8613cff86ec824257c4ef021900da17b674df4ab647e960d0f4c2893bcd1"
+  },
+  {
+    "id": 53,
+    "reference_name": "ni_790D08",
+    "vram": 100663296,
+    "size": 18448,
+    "sha256": "1929788dc07a6126bab8598775a13f8207b097094a32c25da97aece371c04de8"
+  },
+  {
+    "id": 54,
+    "reference_name": "ni_793C0C",
+    "vram": 100663296,
+    "size": 2288,
+    "sha256": "61a471a72a188a383002b6504bc9059a8d00f79cadf6413ad7fda87fe266dbab"
+  },
+  {
+    "id": 55,
+    "reference_name": "ni_common_gameplay_effects",
+    "vram": 100663296,
+    "size": 207984,
+    "sha256": "484df1f562599456ef96d913b0751d5b31dfa49327b2bfd46234a6362ae527c0"
+  },
+  {
+    "id": 56,
+    "reference_name": "ni_7A2B30",
+    "vram": 100663296,
+    "size": 5808,
+    "sha256": "094aa1d4e4d633a176991e2d6c0f061e8f134fd990dfe622abbc72ece11d426d"
+  },
+  {
+    "id": 57,
+    "reference_name": "ni_7A38EC",
+    "vram": 100663296,
+    "size": 13024,
+    "sha256": "1d83d2b971af9a85bb06dbc02836239d21d77050983bbf5474b18d0247edd4ed"
+  },
+  {
+    "id": 58,
+    "reference_name": "ni_7A4DFC",
+    "vram": 100663296,
+    "size": 4688,
+    "sha256": "93a838a09e5329878cf8a7ddb50dd46562e120a74e8392b90ff5094543b68a73"
+  },
+  {
+    "id": 59,
+    "reference_name": "ni_7A5352",
+    "vram": 100663296,
+    "size": 22144,
+    "sha256": "088b8b625f4330fe9b8a738b146bbe46319cca119dae05ccc7d7e861e2077678"
+  },
+  {
+    "id": 60,
+    "reference_name": "NI_ASSETS_MORI",
+    "vram": 100663296,
+    "size": 257872,
+    "sha256": "ca73d191f4d95e9ab99b2de6980b2b0ae264e19ef2264de8a5d7425219289b01"
+  },
+  {
+    "id": 61,
+    "reference_name": "NI_ASSETS_TOU",
+    "vram": 100663296,
+    "size": 169504,
+    "sha256": "fd4a60697af28f18d39af973bde70ee8f9ed9ba955bedfd6333c8f0f8c532a03"
+  },
+  {
+    "id": 62,
+    "reference_name": "NI_ASSETS_TOUOKUJI",
+    "vram": 100663296,
+    "size": 153376,
+    "sha256": "3838b164559ac10d50875f8adc75f0c71e949fbc0af7efd64b2e6767788729de"
+  },
+  {
+    "id": 63,
+    "reference_name": "NI_ASSETS_NAKANIWA",
+    "vram": 100663296,
+    "size": 110752,
+    "sha256": "65ffe5f1ad6840efeaf164e7021155122694d699a2bc0f867d0f72e29ec846f7"
+  },
+  {
+    "id": 64,
+    "reference_name": "NI_ASSETS_BEKKAN_1F",
+    "vram": 100663296,
+    "size": 147712,
+    "sha256": "7b8ff46785e12d7c50776a9613f49325e525624ce957355bf73789daf1d57f22"
+  },
+  {
+    "id": 65,
+    "reference_name": "NI_ASSETS_BEKKAN_2F",
+    "vram": 100663296,
+    "size": 190240,
+    "sha256": "415d737905cf8ce7d2f257216f9e4ef6dbda446a98ed535ccc8fb328f809a400"
+  },
+  {
+    "id": 66,
+    "reference_name": "NI_ASSETS_MEIRO_TEIEN",
+    "vram": 100663296,
+    "size": 154288,
+    "sha256": "86266db403164fcb7dc16146c5aacc7398ac1c63e46546c8aace8baa196797a9"
+  },
+  {
+    "id": 67,
+    "reference_name": "NI_ASSETS_CHIKA_KODO",
+    "vram": 100663296,
+    "size": 211808,
+    "sha256": "14e4381c97ce93ec30d343bdac240d7405e0370c199e472a34ceb2280898fc16"
+  },
+  {
+    "id": 68,
+    "reference_name": "NI_ASSETS_CHIKA_SUIRO",
+    "vram": 100663296,
+    "size": 123312,
+    "sha256": "a837100bdf791ad46ee0a483a924c5ea73691d802da53f94f76e5406ed02c6f5"
+  },
+  {
+    "id": 69,
+    "reference_name": "NI_ASSETS_HONMARU_B1F",
+    "vram": 100663296,
+    "size": 161472,
+    "sha256": "0273af81c465507ada7ca915ce5a8924fa1228e945906c90412c411a1c18ce96"
+  },
+  {
+    "id": 70,
+    "reference_name": "NI_ASSETS_HONMARU_1F",
+    "vram": 100663296,
+    "size": 101040,
+    "sha256": "0d26d4b031bcdd218d4a986a26301c28ee32e3dc2a28e9cb5104130dec4f54c5"
+  },
+  {
+    "id": 71,
+    "reference_name": "NI_ASSETS_HONMARU_2F",
+    "vram": 100663296,
+    "size": 182832,
+    "sha256": "fc37f605db29ac93445ed938a33bc5aa5415650440292d7358354201ee6e0d02"
+  },
+  {
+    "id": 72,
+    "reference_name": "NI_ASSETS_HONMARU_3F_MINAMI",
+    "vram": 100663296,
+    "size": 172240,
+    "sha256": "283875e3171ff8d270e9c6cb329ecd25ae4a7149d8a86f7101a2f4e4544227c3"
+  },
+  {
+    "id": 73,
+    "reference_name": "NI_ASSETS_HONMARU_4F_MINAMI",
+    "vram": 100663296,
+    "size": 127792,
+    "sha256": "7348686b077a720ed0aa1bc5663cca669c710ec36f040ffa68d3339b8363a586"
+  },
+  {
+    "id": 74,
+    "reference_name": "NI_ASSETS_HONMARU_3F_KITA",
+    "vram": 100663296,
+    "size": 201952,
+    "sha256": "711a3855267496d99fa3df8a2da94fd3a67e654c5610eb9b7de2427d864c5292"
+  },
+  {
+    "id": 75,
+    "reference_name": "NI_ASSETS_HONMARU_5F",
+    "vram": 100663296,
+    "size": 50784,
+    "sha256": "72e483151e714a60b7587efc53a074ccf77df2833b57a64dc1f7010e59f9cc0f"
+  },
+  {
+    "id": 76,
+    "reference_name": "NI_ASSETS_SHOKEI_TOU",
+    "vram": 100663296,
+    "size": 117280,
+    "sha256": "a54a66ffc4b1348d81730000902f22c2baa406d9037cb8682ca7bc827ef55d0d"
+  },
+  {
+    "id": 77,
+    "reference_name": "NI_ASSETS_MAHOU_TOU",
+    "vram": 100663296,
+    "size": 113440,
+    "sha256": "86b85a687da2e4a21a295421f640c82e062660e2a7f2684aac6b5eee0ee9ff7e"
+  },
+  {
+    "id": 78,
+    "reference_name": "NI_ASSETS_KAGAKU_TOU",
+    "vram": 100663296,
+    "size": 193616,
+    "sha256": "dbbb908189bf7001ebff250ba5e1f2878b9b8e709391010bef64ae312b3df44d"
+  },
+  {
+    "id": 79,
+    "reference_name": "NI_ASSETS_KETTOU_TOU",
+    "vram": 100663296,
+    "size": 91440,
+    "sha256": "9d6a80789ceb3e0701f59409d0f5d5cf4d01c239cac01b32d145a9ee4d34f971"
+  },
+  {
+    "id": 80,
+    "reference_name": "NI_ASSETS_TURO_TOKEITOU",
+    "vram": 100663296,
+    "size": 129600,
+    "sha256": "884eb59a1a47665a74cf30b87fe470baba3f4feeeb3cf5772b802bfbf4864ec2"
+  },
+  {
+    "id": 81,
+    "reference_name": "NI_ASSETS_TENSHU",
+    "vram": 100663296,
+    "size": 79248,
+    "sha256": "24d2d24c8b42ae83683bfdbd7251e2b899a0f1987700cf283019e340e61bfeae"
+  },
+  {
+    "id": 82,
+    "reference_name": "NI_ASSETS_ENDING_DUMMY",
+    "vram": 100663296,
+    "size": 176,
+    "sha256": "fe36b402f1c835549cc50f1f03de9ef87f028e0a1c6b2bf6f9a77182aa20748d"
+  },
+  {
+    "id": 83,
+    "reference_name": "NI_ASSETS_TOKEITOU_NAI",
+    "vram": 100663296,
+    "size": 152320,
+    "sha256": "8dfdd5a0200189e1b20a48d1f843fe39bdaf641cf124815c5d6760059c19469d"
+  },
+  {
+    "id": 84,
+    "reference_name": "NI_ASSETS_DRACULA",
+    "vram": 100663296,
+    "size": 46448,
+    "sha256": "56868492b28f1c186a5e6b18a04f790ec9a5c87246e8451b6e0bbb83bc339e41"
+  },
+  {
+    "id": 85,
+    "reference_name": "NI_ASSETS_ROSE",
+    "vram": 100663296,
+    "size": 25792,
+    "sha256": "c1955f33b83c939d0a7ef9fc5062ea52447cf81eef7caeb1aeb07d4e64bccfc9"
+  },
+  {
+    "id": 86,
+    "reference_name": "NI_ASSETS_BEKKAN_BOSS",
+    "vram": 100663296,
+    "size": 42288,
+    "sha256": "9f280746e1c00b3667d2fb4f84aec39fcca7a6ae91c72c2c997d41b1f93fdffa"
+  },
+  {
+    "id": 87,
+    "reference_name": "NI_ASSETS_TOU_TURO",
+    "vram": 100663296,
+    "size": 49504,
+    "sha256": "a9bd4806c58bb83507c38910bc2efc38a22d1b1e2f86956155465a39083fa9dd"
+  },
+  {
+    "id": 88,
+    "reference_name": "NI_ASSETS_ENDING",
+    "vram": 100663296,
+    "size": 109488,
+    "sha256": "f68ec5829ca09b3cd3343c2b7f51bacf9c1c4f169da90ad47e8552bbcfe67d83"
+  },
+  {
+    "id": 89,
+    "reference_name": "ni_pickable_items",
+    "vram": 100663296,
+    "size": 27200,
+    "sha256": "322bdff8295add87854e8f0420eeee3b6010c8dd5db039fbab0d63d4f6ed84d3"
+  },
+  {
+    "id": 90,
+    "reference_name": "ni_skybox",
+    "vram": 100663296,
+    "size": 16304,
+    "sha256": "bf92258fc36042dc9b80c83148501661a811e3a921f6d77fbc4cdaa9ac91f5f0"
+  },
+  {
+    "id": 91,
+    "reference_name": "NI_ASSETS_TEST_GRID",
+    "vram": 100663296,
+    "size": 7728,
+    "sha256": "37317cbd137d491e63749c02555d1c181aed3fa27a9a4f0c620fdcc903414ff3"
+  },
+  {
+    "id": 92,
+    "reference_name": "ni_konami_kcek_logos",
+    "vram": 100663296,
+    "size": 91424,
+    "sha256": "11b1bfe617108cdce3ed4e2b32ea1a60b5ff559fa63c478279abd2517e3853e8"
+  },
+  {
+    "id": 93,
+    "reference_name": "ni_scroll",
+    "vram": 100663296,
+    "size": 16976,
+    "sha256": "433b5e1ec743f904ef0b95c32709983fa98470e8e01fb2c8c5deaed0c1f1af0b"
+  },
+  {
+    "id": 94,
+    "reference_name": "ni_cutscene_63",
+    "vram": 100663296,
+    "size": 189824,
+    "sha256": "e3f3683ea5a25d9f339cb9c336caecd05b1162e6c873150e581661ebd6e5ea7a"
+  },
+  {
+    "id": 95,
+    "reference_name": "ni_pause_menu",
+    "vram": 100663296,
+    "size": 110336,
+    "sha256": "d52a41b9926c8c95432f6cff0728dbb8c4ea07a2b4a2723f3a860d1656bbae17"
+  },
+  {
+    "id": 96,
+    "reference_name": "ni_necronomicon_book",
+    "vram": 100663296,
+    "size": 49088,
+    "sha256": "484f796235f8895ef1f5745c504cceb7f6437eaf0741a5123ee942842fd1d10d"
+  },
+  {
+    "id": 97,
+    "reference_name": "ni_character_select",
+    "vram": 100663296,
+    "size": 19952,
+    "sha256": "f3db895216c5e2092d0320c7d4ef20e7b8829ef34b7e55d8c60fb6738bdf3851"
+  },
+  {
+    "id": 98,
+    "reference_name": "ni_gameplay_hud",
+    "vram": 100663296,
+    "size": 86896,
+    "sha256": "a27b16a2c01dfc72fd3339a960c4c0afbb93b52ba64ca4535a1e3e2fe0cc11a3"
+  },
+  {
+    "id": 99,
+    "reference_name": "ni_game_over",
+    "vram": 100663296,
+    "size": 40080,
+    "sha256": "fb5d1f0d137e9bf7bf3cf5ffea304b66a1633ec7ea1d4113a40aa50b07e62964"
+  },
+  {
+    "id": 100,
+    "reference_name": "ni_file_select",
+    "vram": 100663296,
+    "size": 4832,
+    "sha256": "61e01e8b05208f92e5fd1b091c2b8898923d5f5ab1cec4960836ad3348c7e1a9"
+  },
+  {
+    "id": 101,
+    "reference_name": "ni_controller_buttons",
+    "vram": 100663296,
+    "size": 9968,
+    "sha256": "e78750f2f4d41c89db679ea8225f49986cab050909c2157d7957501b4ecd538a"
+  },
+  {
+    "id": 102,
+    "reference_name": "ni_renon_briefcase",
+    "vram": 100663296,
+    "size": 11584,
+    "sha256": "467e0873577aa862e72a55e612782c8a41fcaea0b4c9c6d9842ff623deed7c5b"
+  },
+  {
+    "id": 103,
+    "reference_name": "ni_cs_film_reel",
+    "vram": 100663296,
+    "size": 672,
+    "sha256": "4897e66f5bc21656860bdf8eeb09bb70df36c6c00d49d9bdcbb19d40b71aa16d"
+  },
+  {
+    "id": 104,
+    "reference_name": "ni_cutscene_01_10_27",
+    "vram": 100663296,
+    "size": 103360,
+    "sha256": "e4c981b3ebae925ce073b117b164cff836b9b4207126d58c8a92307b12b07df6"
+  },
+  {
+    "id": 105,
+    "reference_name": "ni_cutscene_02",
+    "vram": 100663296,
+    "size": 3504,
+    "sha256": "61608e5173e71134a131633c1027279607d966707a0ddd23a7aa009559dbf8b3"
+  },
+  {
+    "id": 106,
+    "reference_name": "ni_cutscene_2B",
+    "vram": 100663296,
+    "size": 4640,
+    "sha256": "38214d57d56e90b5467f936ec2341ade504b81bda09fb5d90f53ed50898c5d3b"
+  },
+  {
+    "id": 107,
+    "reference_name": "ni_cutscene_2C",
+    "vram": 100663296,
+    "size": 6384,
+    "sha256": "d194e10e0d2f8dd2da0aa8ed53639b3b3069cabef93b56ba5f883d1c12d06a27"
+  },
+  {
+    "id": 108,
+    "reference_name": "ni_cutscene_2E",
+    "vram": 100663296,
+    "size": 2208,
+    "sha256": "6d082f6d9525626e63dfcc47a7dba9f069200afd7fbb2137e8735ea0886e8cb7"
+  },
+  {
+    "id": 109,
+    "reference_name": "ni_cutscene_3F",
+    "vram": 100663296,
+    "size": 2416,
+    "sha256": "2df705561c194d9348837e086af0be0f591642f96fc84eef8df6600ff26058fc"
+  },
+  {
+    "id": 110,
+    "reference_name": "ni_cutscene_2C_2D",
+    "vram": 100663296,
+    "size": 32048,
+    "sha256": "1a29f80105aba8dccbfdd6301161f98207728737944096519b75663ce72cae14"
+  },
+  {
+    "id": 111,
+    "reference_name": "ni_cutscene_0A",
+    "vram": 100663296,
+    "size": 3216,
+    "sha256": "9babf658a90b847e79a3bb2318282534077e97c445cffc0ab16b9a4a2dc84f54"
+  },
+  {
+    "id": 112,
+    "reference_name": "ni_smiley_face",
+    "vram": 134217728,
+    "size": 5888,
+    "sha256": "3389090554bd86f8796c0721eb5bc0b7cbc374eb6419b4c4e4f03953920cd753"
+  },
+  {
+    "id": 113,
+    "reference_name": "ni_ovl_cerberus",
+    "vram": 251658240,
+    "size": 57232,
+    "sha256": "39189f194e23f4dfa59f6f2f668b6b547eb96e2c19c36a797fc8035daffb5bb9"
+  },
+  {
+    "id": 114,
+    "reference_name": "ni_ovl_white_dragon",
+    "vram": 251658240,
+    "size": 39536,
+    "sha256": "7cbd569e62b276efe472234acd212c40c4b2680d1d730abd359e8aab2eb1fc49"
+  },
+  {
+    "id": 115,
+    "reference_name": "ni_ovl_gardener",
+    "vram": 251658240,
+    "size": 23264,
+    "sha256": "bb7e12780938c5d18e7582f0f6d8f1472ef28d004a26a0b9ac1df4d4bd71a57b"
+  },
+  {
+    "id": 116,
+    "reference_name": "ni_ovl_stone_dog",
+    "vram": 251658240,
+    "size": 27776,
+    "sha256": "07bf72ee33b94d880bb6ce031e9902ab180c8dabc667a72e273d373cfa32bc96"
+  },
+  {
+    "id": 117,
+    "reference_name": "ni_ovl_malus",
+    "vram": 251658240,
+    "size": 29872,
+    "sha256": "c3933ffac2195b1c7c2919024c5aae6c5ff81060684f67729e8b34f52ee3b60b"
+  },
+  {
+    "id": 118,
+    "reference_name": "ni_ovl_behemoth",
+    "vram": 251658240,
+    "size": 92336,
+    "sha256": "f034f4ed7ee28dfc9ca7c442b5e6df32f87642f62b75d09da2bfd244e22e9e34"
+  },
+  {
+    "id": 119,
+    "reference_name": "ni_ovl_weretiger",
+    "vram": 251658240,
+    "size": 26304,
+    "sha256": "36bc5c78cddd128a0b9cba92505c24eaa7f27631d6a3a4ce83dc703aa2629d49"
+  },
+  {
+    "id": 120,
+    "reference_name": "ni_ovl_werewolf",
+    "vram": 251658240,
+    "size": 33008,
+    "sha256": "939cf05420fdc70eb8d92fb816014f17d18f7a322414c984f11589d8cac9710a"
+  },
+  {
+    "id": 121,
+    "reference_name": "ni_ovl_hell_knight",
+    "vram": 251658240,
+    "size": 33936,
+    "sha256": "9b946fe59c6a19096b9fd6631230174d3d0c2f881f0d1c88c6721b277867a069"
+  },
+  {
+    "id": 122,
+    "reference_name": "ni_ovl_ghost",
+    "vram": 251658240,
+    "size": 11648,
+    "sha256": "ae7c3cc0240cd6928b09bdf37bba60479914bd1e2646702ee8935a7483d3069a"
+  },
+  {
+    "id": 123,
+    "reference_name": "ni_ovl_iceman",
+    "vram": 251658240,
+    "size": 25280,
+    "sha256": "e410ee73002f8b757baa4fc1f3ba2f87947012fdc69a30b9f6c628e65740489a"
+  },
+  {
+    "id": 124,
+    "reference_name": "ni_ovl_icemanAssetsLoader",
+    "vram": 251658240,
+    "size": 368,
+    "sha256": "bf5c8ad7bfecb5cfb1fc7ae6a621449251144ec0bcca820f840d41aaf234b0bc"
+  },
+  {
+    "id": 125,
+    "reference_name": "ni_ovl_opening_bat",
+    "vram": 251658240,
+    "size": 1200,
+    "sha256": "34939b0be47a640b01b61c67449b08a37a2cdfc9e929013f72c7d18381b95b42"
+  },
+  {
+    "id": 126,
+    "reference_name": "ni_ovl_flying_skull",
+    "vram": 251658240,
+    "size": 10848,
+    "sha256": "7a01a1b7b9fba6b9084bf11bdc209a2f9853d1ed3158b0572fe8eb05ffb4c76b"
+  },
+  {
+    "id": 127,
+    "reference_name": "ni_ovl_bat",
+    "vram": 251658240,
+    "size": 13328,
+    "sha256": "9657b857687aa9efea165b9ffbcba696ba3d9799f805d1180668a06139b65d18"
+  },
+  {
+    "id": 128,
+    "reference_name": "ni_ovl_medusa_head",
+    "vram": 251658240,
+    "size": 6944,
+    "sha256": "2f9b4b63ed29b564e3dc10579cff9d491ed4ecfc6224963b218309074134ff11"
+  },
+  {
+    "id": 129,
+    "reference_name": "ni_ovl_pillar_of_bones",
+    "vram": 251658240,
+    "size": 17904,
+    "sha256": "2587756a47bd63c29e990d5c2a62d28d9240aef9f4cd397ba3bf123432b586a3"
+  },
+  {
+    "id": 130,
+    "reference_name": "ni_ovl_vampires",
+    "vram": 251658240,
+    "size": 137680,
+    "sha256": "4523cf5b023970232d0b8b39d1bfcc960f86044d2de6720461dc638fdfcd07b3"
+  },
+  {
+    "id": 131,
+    "reference_name": "ni_ovl_vincent_npc",
+    "vram": 251658240,
+    "size": 9280,
+    "sha256": "5c33bcf453aba494f15a1041f33f543bbaa3d68b418306e1a90953b6ab807ac1"
+  },
+  {
+    "id": 132,
+    "reference_name": "ni_A7C0FE",
+    "vram": 251658240,
+    "size": 3280,
+    "sha256": "7056d759d2f3f4e7c6e6f67ea6cddafdedb29c442748e5c69f5372a701ac490d"
+  },
+  {
+    "id": 133,
+    "reference_name": "ni_A7C8C4",
+    "vram": 251658240,
+    "size": 6192,
+    "sha256": "bd63cd812ca8758588c480a3fca9410aeb3933de35c0bcef3d752c539ae1497c"
+  },
+  {
+    "id": 134,
+    "reference_name": "ni_A7D81A",
+    "vram": 251658240,
+    "size": 1120,
+    "sha256": "2f90a5dc6a1a61758a81b0f928975d85ba90629498cf04ce915ea9a371a9347f"
+  },
+  {
+    "id": 135,
+    "reference_name": "ni_A7DBB0",
+    "vram": 251658240,
+    "size": 2528,
+    "sha256": "0e9358c9ec857353917f80054f6c7843e7ffba381415630500a5cdde41d995e9"
+  },
+  {
+    "id": 136,
+    "reference_name": "ni_A7E2DA",
+    "vram": 251658240,
+    "size": 704,
+    "sha256": "15d55b99b6a91a2689629198bad0b3a2fb203e316cfe7eace5e8062cb791d960"
+  },
+  {
+    "id": 137,
+    "reference_name": "ni_ovl_spider_centaur",
+    "vram": 251658240,
+    "size": 52160,
+    "sha256": "739660ea9342fcedde3efc98db732447339eb21e6b009f260efc209b9b581c57"
+  },
+  {
+    "id": 138,
+    "reference_name": "ni_ovl_heavy_lizard_man",
+    "vram": 251658240,
+    "size": 67504,
+    "sha256": "af13e569a76cd58fd4bb60b1ea804e605a4d8b126444c115d50d6590268b1086"
+  },
+  {
+    "id": 139,
+    "reference_name": "ni_ovl_skeleton_warrior",
+    "vram": 251658240,
+    "size": 53536,
+    "sha256": "d0620bbb81972b9c818bfe419f19accdd6ef58d1388fe136294a9a916f3a7d33"
+  },
+  {
+    "id": 140,
+    "reference_name": "ni_ovl_king_skeleton",
+    "vram": 251658240,
+    "size": 44064,
+    "sha256": "f0ed74eb08c3064cb4d9fa20131975b365742ae0a215402d556a9e5dd6491cac"
+  },
+  {
+    "id": 141,
+    "reference_name": "ni_ovl_skeleton_biker",
+    "vram": 251658240,
+    "size": 32352,
+    "sha256": "5342fab4e15d79bddaec8c020a46028490e539ac854fcdc33731b9c255f0ee82"
+  },
+  {
+    "id": 142,
+    "reference_name": "ni_ovl_true_dracula",
+    "vram": 251658240,
+    "size": 42096,
+    "sha256": "546a965750ffe3767a3824bef3f43c56df513c9a1a399c709eedc4d6e1f42969"
+  },
+  {
+    "id": 143,
+    "reference_name": "ni_AB029E",
+    "vram": 251658240,
+    "size": 5584,
+    "sha256": "68d741e2701649d0b90514c737db5a9e4cbcc9b2e2b91399ee2d83c95a6f970e"
+  },
+  {
+    "id": 144,
+    "reference_name": "ni_AB10D4",
+    "vram": 251658240,
+    "size": 29760,
+    "sha256": "93f1386794ee9d1c115e948c754dad1463ef33d6238661bc4ad6d7de4d11240e"
+  },
+  {
+    "id": 145,
+    "reference_name": "ni_ovl_cutscene_02",
+    "vram": 251658240,
+    "size": 26768,
+    "sha256": "93f827c4d876d19f76394b8148d9f5e7f708d1e27275bd8aea9e2fec45dbd608"
+  },
+  {
+    "id": 146,
+    "reference_name": "ni_ovl_malus_horse",
+    "vram": 251658240,
+    "size": 13360,
+    "sha256": "6b63c64a83ce127d649c95899f559774becba4b91330d5dc47468ec3f50098ca"
+  },
+  {
+    "id": 147,
+    "reference_name": "ni_ovl_demon_dracula",
+    "vram": 251658240,
+    "size": 157296,
+    "sha256": "8f9c7177a9c24b4b1fee2f6d69d42ee7df3884f6ef1324b7a8a26088c894bb6b"
+  },
+  {
+    "id": 148,
+    "reference_name": "ni_ovl_demon_dracula_assets_loader",
+    "vram": 251658240,
+    "size": 16,
+    "sha256": "fd123d9f67e8fe04f1d2ccbe15c1ddefff0e6bdcaf7c4fb4d4c8dde85df09870"
+  },
+  {
+    "id": 149,
+    "reference_name": "ni_AD7B28",
+    "vram": 251658240,
+    "size": 44944,
+    "sha256": "5fc64a75ddc964366e815a73cc8928731b9cb6b94ada184f006ee9b01219e770"
+  },
+  {
+    "id": 150,
+    "reference_name": "ni_AE04FC",
+    "vram": 251658240,
+    "size": 27600,
+    "sha256": "b174f170a82d41d1e43d94c531a60c6d0e074dd95f236e37f88bb6661dafe69b"
+  },
+  {
+    "id": 151,
+    "reference_name": "ni_ovl_gilles_de_rais_boss",
+    "vram": 251658240,
+    "size": 71744,
+    "sha256": "efdbfb3b2e8153f64b3d08ab189025863d848f793ab28fa932bd19949353bd23"
+  },
+  {
+    "id": 152,
+    "reference_name": "ni_AF1332",
+    "vram": 251658240,
+    "size": 15216,
+    "sha256": "7c890a1bbc6239d1438a165a7384ea63b8196221f29dc25c7b91bfa59b7728c2"
+  },
+  {
+    "id": 153,
+    "reference_name": "ni_ovl_demon_renon",
+    "vram": 251658240,
+    "size": 96176,
+    "sha256": "c4315487c5eb354c4b873177bf104f24b5bf4bb25ead5b83d4ada308cab4fd8a"
+  },
+  {
+    "id": 154,
+    "reference_name": "ni_ovl_death",
+    "vram": 251658240,
+    "size": 109472,
+    "sha256": "37faeed72112cabbc5d4a1e9331cc6f54ac1a9ee86250b3af12b7fc5f59d6f5f"
+  },
+  {
+    "id": 155,
+    "reference_name": "ni_B175D4",
+    "vram": 251658240,
+    "size": 21584,
+    "sha256": "bf512c880be04a00565a598058696b0703f9e91467cbe4e7552ebd3c5c611b89"
+  },
+  {
+    "id": 156,
+    "reference_name": "ni_ovl_rosa_boss",
+    "vram": 251658240,
+    "size": 70592,
+    "sha256": "2ad0bab7b25ee6c38ab422b9fb751da98bbcd7d434294b6a88b8d2480c173ef3"
+  },
+  {
+    "id": 157,
+    "reference_name": "ni_ovl_camilla_boss",
+    "vram": 251658240,
+    "size": 49984,
+    "sha256": "4bc7e0fc4c1bd96f309248306dd4f2b276c60aecf66976e4b46d89ea4b755319"
+  },
+  {
+    "id": 158,
+    "reference_name": "ni_ovl_actrise_boss",
+    "vram": 251658240,
+    "size": 49536,
+    "sha256": "ec3e4ba4c818cddfc3884e27376c9405a1ba98572a902d92b3060e4311c62793"
+  },
+  {
+    "id": 159,
+    "reference_name": "ni_B3A734",
+    "vram": 251658240,
+    "size": 43936,
+    "sha256": "a65edb163fbd077227384498739e35b1980e80c1a805deb83a5c26071f315a3c"
+  },
+  {
+    "id": 160,
+    "reference_name": "ni_B42D50",
+    "vram": 251658240,
+    "size": 8160,
+    "sha256": "39cd943e4030176c41eaf6f467e4f260a977d38840d6d32afd7c2edf0d65f408"
+  },
+  {
+    "id": 161,
+    "reference_name": "ni_B44694",
+    "vram": 251658240,
+    "size": 1200,
+    "sha256": "abef63fa5c7b600d579fdfbd8fb28be61e5923dfff9493683448ed87cb913306"
+  },
+  {
+    "id": 162,
+    "reference_name": "ni_B449CE",
+    "vram": 251658240,
+    "size": 13072,
+    "sha256": "900c0c60e78f4f9508dd07d040c84c138ebda12f4d57f584690c2028451c247b"
+  },
+  {
+    "id": 163,
+    "reference_name": "ni_B47542",
+    "vram": 251658240,
+    "size": 4912,
+    "sha256": "5fb09a3f633f5609ee90b221c4554bc0abb38abc192beef4d953399a5eeea8da"
+  },
+  {
+    "id": 164,
+    "reference_name": "ni_ovl_hell_knight_static",
+    "vram": 251658240,
+    "size": 2480,
+    "sha256": "653f02735ace945bc0955225475af64c11befb834378a2e1afde3141abc7ffd9"
+  },
+  {
+    "id": 165,
+    "reference_name": "ni_gondola_pathway_data_loader",
+    "vram": 251658240,
+    "size": 53968,
+    "sha256": "06a97b6a7e5344f29d629bc12f8da06e9e4975bde7549ed1cd26e232d092be8a"
+  },
+  {
+    "id": 166,
+    "reference_name": "ni_ovl_mini_scroll",
+    "vram": 251658240,
+    "size": 5664,
+    "sha256": "b9566f4b4229181083ba3a162d9b2c97e5965e310bbb1e340a30ba716447b107"
+  },
+  {
+    "id": 167,
+    "reference_name": "ni_B50812",
+    "vram": 251658240,
+    "size": 4848,
+    "sha256": "bec8209b595096ffe1b8f2c3553857a5ae176a96f4d4dd588f34206f8296da8d"
+  },
+  {
+    "id": 168,
+    "reference_name": "ni_B5140E",
+    "vram": 251658240,
+    "size": 832,
+    "sha256": "3a2e0666168dc91a5174052ee75b2e6250b805d389ad72ba0bd2ec739d92eb70"
+  },
+  {
+    "id": 169,
+    "reference_name": "ni_ovl_title_screen",
+    "vram": 251658240,
+    "size": 6624,
+    "sha256": "1176910436f90dda89e9ce0189a3d381a9d0038336104a132427d462e0d9bb4e"
+  },
+  {
+    "id": 170,
+    "reference_name": "ni_B528BA",
+    "vram": 251658240,
+    "size": 1296,
+    "sha256": "7aa67f19ce79f583e05f5602b149ef02522156bffaeb6f130c935a09505a1157"
+  },
+  {
+    "id": 171,
+    "reference_name": "ni_B52BE4",
+    "vram": 251658240,
+    "size": 1280,
+    "sha256": "2a9d3dc3097da469546c92d9dab2ff24920a4c0054e1f2f9643be6991ef228e6"
+  },
+  {
+    "id": 172,
+    "reference_name": "ni_ovl_title_demo",
+    "vram": 251658240,
+    "size": 10960,
+    "sha256": "218c711ec1d5752fd29d68f75ebfb46b445a4eb9b96700bb84f81cce5ccf7b42"
+  },
+  {
+    "id": 173,
+    "reference_name": "ni_ovl_credits_manager",
+    "vram": 251658240,
+    "size": 576,
+    "sha256": "a90819b04602413fcc4f4e18c5221e64b2784398a860c2d00cad8f7b4a4697c0"
+  },
+  {
+    "id": 174,
+    "reference_name": "ni_ovl_pause_menu",
+    "vram": 251658240,
+    "size": 11520,
+    "sha256": "cdecb72ac1879601e020637256921cda14d50cf944d941a17c5d7069e7192d9a"
+  },
+  {
+    "id": 175,
+    "reference_name": "ni_ovl_difficulty_and_character_select",
+    "vram": 251658240,
+    "size": 4960,
+    "sha256": "1314d66fa88694fa30ea2262056f1b588eb01f3c1398a71694839995b885b12f"
+  },
+  {
+    "id": 176,
+    "reference_name": "ni_ovl_game_over",
+    "vram": 251658240,
+    "size": 9104,
+    "sha256": "6acdcb7fdf63baa6c4bb7ce8f853fce8f44d2c5363aaed48fb5cba9ca6d0fbc1"
+  },
+  {
+    "id": 177,
+    "reference_name": "ni_ovl_save_game_results",
+    "vram": 251658240,
+    "size": 2624,
+    "sha256": "a1c7146b9fa13f0c3ecfefd0a866b75200c41ed3d026e9c415b33aaac5830459"
+  },
+  {
+    "id": 178,
+    "reference_name": "ni_B59058",
+    "vram": 251658240,
+    "size": 1440,
+    "sha256": "c0afbe02d8cefbbd5d2321bc96a91aad5e5668fa0ca1d9889d3edca3ecfda8b5"
+  },
+  {
+    "id": 179,
+    "reference_name": "ni_ovl_save_game",
+    "vram": 251658240,
+    "size": 7856,
+    "sha256": "83cdaf91e8f8c9ca7e28d349e26468ddac1f26c36f72d9bc4e5d45d304bd33d9"
+  },
+  {
+    "id": 180,
+    "reference_name": "ni_ovl_textbox_advance_arrow",
+    "vram": 251658240,
+    "size": 960,
+    "sha256": "4294d41d1c82845d0f3ee4a159940a65798cf4590124a571b98aaeb5c13550de"
+  },
+  {
+    "id": 181,
+    "reference_name": "ni_ovl_button_config",
+    "vram": 251658240,
+    "size": 3152,
+    "sha256": "b41df15bde8578adb00f629f7c05cfebd1dda19ca1f7272909471490a0ed6e43"
+  },
+  {
+    "id": 182,
+    "reference_name": "ni_ovl_entrance_map_name_display",
+    "vram": 251658240,
+    "size": 2512,
+    "sha256": "b1e387785a94d7707f50209e19c8614de72ec34e9615986ef1e4f40ef4e7f3c6"
+  },
+  {
+    "id": 183,
+    "reference_name": "ni_B5B5D0",
+    "vram": 251658240,
+    "size": 1264,
+    "sha256": "153682cc35159dc3caf0b72595485daefc3136be5e3098954bad16ac33202987"
+  },
+  {
+    "id": 184,
+    "reference_name": "ni_ovl_renon_briefcase",
+    "vram": 251658240,
+    "size": 1696,
+    "sha256": "9fc0111d8cec304a7b1a464e95ff7a7f2cb205f9a005c696d2534c849dbd9729"
+  },
+  {
+    "id": 185,
+    "reference_name": "ni_ovl_overlay_BA",
+    "vram": 251658240,
+    "size": 432,
+    "sha256": "d564a0b17e14e7847203f5b860007d4fa5e1384adac5c0c3ecfe59671f6d8e6d"
+  },
+  {
+    "id": 186,
+    "reference_name": "ni_ovl_easy_mode_ending_msg",
+    "vram": 251658240,
+    "size": 976,
+    "sha256": "316c63347c8e6cb7e246919fbceb84674ef5606d190477584f6d49607412f789"
+  },
+  {
+    "id": 187,
+    "reference_name": "ni_ovl_library_puzzle_textbox",
+    "vram": 234881024,
+    "size": 3200,
+    "sha256": "48f9908f9b4dde924f39d92f86862fd65809ec4288051f834b7837bb6d41cee0"
+  },
+  {
+    "id": 188,
+    "reference_name": "ni_ovl_nitro_mandragora_display",
+    "vram": 234881024,
+    "size": 1232,
+    "sha256": "a8d69d1ee81aec520094039f3ec9eaad7f3d216147c703810b3c0d1a29b305a8"
+  },
+  {
+    "id": 189,
+    "reference_name": "ni_ovl_mandragora_textbox",
+    "vram": 234881024,
+    "size": 1184,
+    "sha256": "7391f4c0cc6464fd50e2089225b15356087bf8e3ee19866e769ff2e364bf08fe"
+  },
+  {
+    "id": 190,
+    "reference_name": "ni_ovl_nitro_textbox",
+    "vram": 234881024,
+    "size": 1232,
+    "sha256": "f3f4fad51511f9d760628c73a9b3322fd5d8d26180591d5911466e1f6eee9850"
+  },
+  {
+    "id": 191,
+    "reference_name": "ni_ovl_nitro_disposal_textbox",
+    "vram": 234881024,
+    "size": 1056,
+    "sha256": "30fe0579c0ff1f5877a5c16b338c7c745cc5eb2b8896d9343e29570fdb3225ce"
+  },
+  {
+    "id": 192,
+    "reference_name": "ni_explosive_wall_spot",
+    "vram": 234881024,
+    "size": 3024,
+    "sha256": "aafa86d9a2c9ca6b02179a48a24daf20b0906f4eba1be8178002bd1997fda182"
+  },
+  {
+    "id": 193,
+    "reference_name": "ni_ovl_bottom_elevator_activator_textbox",
+    "vram": 234881024,
+    "size": 1056,
+    "sha256": "8b6ca008d5839e16e1f0ece4d65a9956d686542a381861ec946491b1ce9762e8"
+  },
+  {
+    "id": 194,
+    "reference_name": "ni_ovl_cs_film_reel_effect",
+    "vram": 234881024,
+    "size": 1632,
+    "sha256": "22f92e01691eca60aba21afa6a3eb81b43e7738242e630ef19e11d1928345a45"
+  },
+  {
+    "id": 195,
+    "reference_name": "ni_ovl_cutscene_01",
+    "vram": 234881024,
+    "size": 25616,
+    "sha256": "259e74a6de22261d6ab4c2b51e8b41b912aba4d09577fe4d58e486bed39fa0a9"
+  },
+  {
+    "id": 196,
+    "reference_name": "ni_ovl_cutscene_03",
+    "vram": 234881024,
+    "size": 6416,
+    "sha256": "19b50ae4427caeacca8f5e737a9eedc3a3d5e07dc505354427b12798f1c27203"
+  },
+  {
+    "id": 197,
+    "reference_name": "ni_ovl_cutscene_04",
+    "vram": 234881024,
+    "size": 5792,
+    "sha256": "ccec1af3060965b9313a50e811f2a7118ee5461a91e4fb6e54c5a839b37b511b"
+  },
+  {
+    "id": 198,
+    "reference_name": "ni_ovl_cutscene_05",
+    "vram": 234881024,
+    "size": 5648,
+    "sha256": "1b7324ca80ab94a79bd09d3aafc126607c10f21530c5f1d9cd6159608dc72fff"
+  },
+  {
+    "id": 199,
+    "reference_name": "ni_ovl_cutscene_06",
+    "vram": 234881024,
+    "size": 5040,
+    "sha256": "43883f1074e0a676da0d641bd6a8484287805d7deec5f1c1f5df9c24d592e504"
+  },
+  {
+    "id": 200,
+    "reference_name": "ni_ovl_cutscene_07",
+    "vram": 234881024,
+    "size": 3568,
+    "sha256": "fa8c0339e0905a2a9d6448b0edbfcf9f60764fe4cfad75daed2e24d12d97bb60"
+  },
+  {
+    "id": 201,
+    "reference_name": "ni_ovl_cutscene_08",
+    "vram": 234881024,
+    "size": 2848,
+    "sha256": "4582277f042d9a7fd5f717ddb579027b78898aa426efec725d34c45a59161ccf"
+  },
+  {
+    "id": 202,
+    "reference_name": "ni_ovl_cutscene_09",
+    "vram": 234881024,
+    "size": 4032,
+    "sha256": "20a4e2b8f35e4805393362d4ba606bbced976c132b141b8de933410264060ac7"
+  },
+  {
+    "id": 203,
+    "reference_name": "ni_ovl_cutscene_0A",
+    "vram": 234881024,
+    "size": 8144,
+    "sha256": "5b21078a0397e15ee52fc071b38349dc1b50ba577ba5dc12d6311cbcfc1442fd"
+  },
+  {
+    "id": 204,
+    "reference_name": "ni_ovl_cutscene_0B",
+    "vram": 234881024,
+    "size": 5728,
+    "sha256": "430812c87c5d5cab977d44ad309131e4c17ef696a5916d1e71b7bed8bd72dddd"
+  },
+  {
+    "id": 205,
+    "reference_name": "ni_ovl_cutscene_0C",
+    "vram": 234881024,
+    "size": 9152,
+    "sha256": "a4b5dd9bffd832c7b064c93d2a061390a1b7caddd0427fc6d5ec0f5e0b996742"
+  },
+  {
+    "id": 206,
+    "reference_name": "ni_ovl_cutscene_0D",
+    "vram": 234881024,
+    "size": 14896,
+    "sha256": "61759081353577d36ca64de10b43f6698fa6442d67193687661f63a5d53756aa"
+  },
+  {
+    "id": 207,
+    "reference_name": "ni_ovl_cutscene_0E",
+    "vram": 234881024,
+    "size": 7872,
+    "sha256": "8a1bb130baac6d0faea8999ce237c659158830152060ef7b56eef73c39866029"
+  },
+  {
+    "id": 208,
+    "reference_name": "ni_ovl_cutscene_0F",
+    "vram": 234881024,
+    "size": 5488,
+    "sha256": "79f0a9a52b0ad81728d1e25b52ae9aa03997c06268b62ea33296d3395a033a78"
+  },
+  {
+    "id": 209,
+    "reference_name": "ni_ovl_cutscene_10",
+    "vram": 234881024,
+    "size": 8000,
+    "sha256": "4f6c25f611e96678239eebbb2f99cf1340e5e707fc610e3a76f628e0b85d31f5"
+  },
+  {
+    "id": 210,
+    "reference_name": "ni_ovl_cutscene_11",
+    "vram": 234881024,
+    "size": 6656,
+    "sha256": "7733ff5a47e8893c770c58605409931788ecd1e7459da177c9fc7871177ff0ca"
+  },
+  {
+    "id": 211,
+    "reference_name": "ni_ovl_cutscene_12",
+    "vram": 234881024,
+    "size": 3200,
+    "sha256": "e98c608cfe609a79b8c521f01f36fefb43cb9ff5610e54e5ae989fe84b55fcb8"
+  },
+  {
+    "id": 212,
+    "reference_name": "ni_ovl_cutscene_13",
+    "vram": 234881024,
+    "size": 8608,
+    "sha256": "5546488843b210e707606a96a7830d4c9e8bc24f8e3333fc8de4914bef604098"
+  },
+  {
+    "id": 213,
+    "reference_name": "ni_ovl_cutscene_14",
+    "vram": 234881024,
+    "size": 12864,
+    "sha256": "9a07e20edc46adbaf7f68365f2066685a7d8ef58cb32589424a48d2c12fca2fe"
+  },
+  {
+    "id": 214,
+    "reference_name": "ni_ovl_cutscene_15",
+    "vram": 234881024,
+    "size": 7904,
+    "sha256": "02db86acfc6f0b036b4de8b444ffcb0c6b0dadf7ee4442aef5b1f9c3afbf0355"
+  },
+  {
+    "id": 215,
+    "reference_name": "ni_ovl_cutscene_16",
+    "vram": 234881024,
+    "size": 7376,
+    "sha256": "79b41faeec2b0f5c9eb52459600ce27fd892dfa2733417fa0aa7ef4ea8a8411d"
+  },
+  {
+    "id": 216,
+    "reference_name": "ni_ovl_cutscene_17",
+    "vram": 234881024,
+    "size": 9328,
+    "sha256": "b9df3ec6751ca4789ed7fd7e75cae733db904fd930f66e50b71c47f472afb8a9"
+  },
+  {
+    "id": 217,
+    "reference_name": "ni_ovl_cutscene_18",
+    "vram": 234881024,
+    "size": 3200,
+    "sha256": "3af1e0fc038b97d10de0c320eb33d5f805a858c933a9f5413d95288b607b7662"
+  },
+  {
+    "id": 218,
+    "reference_name": "ni_ovl_cutscene_19",
+    "vram": 234881024,
+    "size": 7536,
+    "sha256": "c2882efec3559ea7bd8fb64c46f33588516e2ba719b2b03a9b28275dff9b8814"
+  },
+  {
+    "id": 219,
+    "reference_name": "ni_ovl_cutscene_1A",
+    "vram": 234881024,
+    "size": 2416,
+    "sha256": "2fac89d0ef6a15e8e6fd811d4490459cbb6e7f812d3ce531d1257cabea0fe6d0"
+  },
+  {
+    "id": 220,
+    "reference_name": "ni_ovl_cutscene_1B",
+    "vram": 234881024,
+    "size": 10656,
+    "sha256": "9c5b764ad39034416a4e58f070da4883886e07f98698620d7a9883ac8d358673"
+  },
+  {
+    "id": 221,
+    "reference_name": "ni_ovl_cutscene_1C",
+    "vram": 234881024,
+    "size": 5936,
+    "sha256": "1b2b0c76a4ba4c532fad7b7db94b434a9d38ff4590925a87dd02122b9afdfcec"
+  },
+  {
+    "id": 222,
+    "reference_name": "ni_ovl_cutscene_1E",
+    "vram": 234881024,
+    "size": 4512,
+    "sha256": "214d5a287d04af7ad3a0e927371fe915534e5925f7f620344fb9662d1f219645"
+  },
+  {
+    "id": 223,
+    "reference_name": "ni_ovl_cutscene_1F",
+    "vram": 234881024,
+    "size": 4960,
+    "sha256": "3c780cc363f1321c5ad002ebadaf5ab9edeb478d3778b5ebfaf4fc1610ef003f"
+  },
+  {
+    "id": 224,
+    "reference_name": "ni_ovl_cutscene_21",
+    "vram": 234881024,
+    "size": 12000,
+    "sha256": "71f5e486104010a4ee3109a339850f5bc1a2c23a329da5d78d49f4ae0396fb0d"
+  },
+  {
+    "id": 225,
+    "reference_name": "ni_ovl_cutscene_22",
+    "vram": 234881024,
+    "size": 18864,
+    "sha256": "873a84c58a85aeca7d78158b09e61ffa54caba1c1bdf48408e8e1df469766a1d"
+  },
+  {
+    "id": 226,
+    "reference_name": "ni_ovl_cutscene_23",
+    "vram": 234881024,
+    "size": 7856,
+    "sha256": "994d4e2975a3c8481ed4cbf1add2dd95e0a80b5cec9aa7cde1c8859859cce31f"
+  },
+  {
+    "id": 227,
+    "reference_name": "ni_ovl_cutscene_24",
+    "vram": 234881024,
+    "size": 5072,
+    "sha256": "88fbc0d0322253cda4f60cbe529f9165721617d2b60995ddc70c40dfb6da73a5"
+  },
+  {
+    "id": 228,
+    "reference_name": "ni_ovl_cutscene_25",
+    "vram": 234881024,
+    "size": 7072,
+    "sha256": "966bb16a7247cd069eca8032d2442cd5a3b8191e8c414560eda28b05917c6182"
+  },
+  {
+    "id": 229,
+    "reference_name": "ni_ovl_cutscene_26",
+    "vram": 234881024,
+    "size": 19856,
+    "sha256": "7be3ea14539b98e43ce7d2f9189d49e7fd2de5c4ad4f88d52b6bd1443d3ba1fd"
+  },
+  {
+    "id": 230,
+    "reference_name": "ni_ovl_cutscene_27",
+    "vram": 234881024,
+    "size": 14208,
+    "sha256": "b7579c53210fcbc1f242c983e91958f306b447921c9e896ac8ba52e7a9ea50e2"
+  },
+  {
+    "id": 231,
+    "reference_name": "ni_ovl_cutscene_28",
+    "vram": 234881024,
+    "size": 2256,
+    "sha256": "93aea008ac2913aa6de66748a8f3852c52f41955b306bda3ec79968d7cb7f60b"
+  },
+  {
+    "id": 232,
+    "reference_name": "ni_ovl_cutscene_29",
+    "vram": 234881024,
+    "size": 1616,
+    "sha256": "e84cd61bafb29851f207035a6fe40f3be83dc0f5392156c96b235d230da7a8a7"
+  },
+  {
+    "id": 233,
+    "reference_name": "ni_ovl_cutscene_2A",
+    "vram": 234881024,
+    "size": 5040,
+    "sha256": "fe51aa1bf8816226797539288787b39bb406721e0d42129c582a47ce22b9d6b7"
+  },
+  {
+    "id": 234,
+    "reference_name": "ni_ovl_cutscene_2B",
+    "vram": 234881024,
+    "size": 7200,
+    "sha256": "cc2b759c067d260f6803960e572c18955f886c7b3b341e239ddb0af61cc5f5a4"
+  },
+  {
+    "id": 235,
+    "reference_name": "ni_ovl_cutscene_2C",
+    "vram": 234881024,
+    "size": 11952,
+    "sha256": "7b645fc6681b40f51322a8015ff9808f49c90a259e2e34232cc4b0a1868cc306"
+  },
+  {
+    "id": 236,
+    "reference_name": "ni_ovl_cutscene_2D",
+    "vram": 234881024,
+    "size": 14592,
+    "sha256": "fc1058126f368083efb07fadb441ceca2f798be89c9d1a322b744f7bf14a51a2"
+  },
+  {
+    "id": 237,
+    "reference_name": "ni_ovl_cutscene_2E",
+    "vram": 234881024,
+    "size": 20768,
+    "sha256": "fd42bd8ecf3628fa1b4cf75b2bb445c4bfd631d0bf1df40b455b160bec2c94c0"
+  },
+  {
+    "id": 238,
+    "reference_name": "ni_ovl_cutscene_32",
+    "vram": 234881024,
+    "size": 2048,
+    "sha256": "da3d5b1cdd0e0742f12194396d956892ee70b394604dc20a73a686787d7940c6"
+  },
+  {
+    "id": 239,
+    "reference_name": "ni_ovl_cutscene_33",
+    "vram": 234881024,
+    "size": 6032,
+    "sha256": "119ed31ac1ddbe211b54f148117071aaf5825465634569c0ba1af6abbebc7133"
+  },
+  {
+    "id": 240,
+    "reference_name": "ni_ovl_cutscene_34",
+    "vram": 234881024,
+    "size": 5744,
+    "sha256": "6eebd2ec1ee9ed37b94e908a3c0fd5eb414acc3214cce66ed09a29b5a70175df"
+  },
+  {
+    "id": 241,
+    "reference_name": "ni_ovl_cutscene_35",
+    "vram": 234881024,
+    "size": 1904,
+    "sha256": "7abbbac343b1f6ff5f02ff600bb70a816ed71dd940d081f49b7f2aeaa1df05f9"
+  },
+  {
+    "id": 242,
+    "reference_name": "ni_ovl_cutscene_3C",
+    "vram": 234881024,
+    "size": 4832,
+    "sha256": "268ab16d8a80fff42606e8d8e26469cb55487d1834b8aeb57a025e3d43648642"
+  },
+  {
+    "id": 243,
+    "reference_name": "ni_ovl_cutscene_3D",
+    "vram": 234881024,
+    "size": 9872,
+    "sha256": "1c106fda9c1fb5e505bb2e6e54e209bff649d3c3a64ac6b1fe6531f61106fd0f"
+  },
+  {
+    "id": 244,
+    "reference_name": "ni_ovl_cutscene_3E",
+    "vram": 234881024,
+    "size": 5008,
+    "sha256": "69dbf352ab987d5820f784959c3146e2095109ecece7807c4147f522556043c5"
+  },
+  {
+    "id": 245,
+    "reference_name": "ni_ovl_cutscene_3F",
+    "vram": 234881024,
+    "size": 8704,
+    "sha256": "e9bc2f5845a56db227d9bb2dfa7c6e4501cb0d911fcbeb0bbc7b89e95a6ef4e3"
+  },
+  {
+    "id": 246,
+    "reference_name": "ni_ovl_cutscene_44",
+    "vram": 234881024,
+    "size": 19248,
+    "sha256": "76f8ee420f937f4be0ff18fddc4173b6c4238312667dfbbf12731ded61e21238"
+  },
+  {
+    "id": 247,
+    "reference_name": "ni_ovl_cutscene_45",
+    "vram": 234881024,
+    "size": 5104,
+    "sha256": "26b19ccc0ee31af187d313dc228e4d570f53029e15dd9cfe14282ebcad4d2d28"
+  },
+  {
+    "id": 248,
+    "reference_name": "ni_ovl_cutscene_52",
+    "vram": 234881024,
+    "size": 4736,
+    "sha256": "10f9d5cc57b340a4c811047266c9cecaf720602b6c9d7c5cee5edd9e3cc75ee7"
+  },
+  {
+    "id": 249,
+    "reference_name": "ni_ovl_cutscene_54",
+    "vram": 234881024,
+    "size": 7008,
+    "sha256": "d2e08b4c2c0ab5e72ede1fa4753d079ec756bb7983f22aa91e1de208a6345b94"
+  },
+  {
+    "id": 250,
+    "reference_name": "ni_ovl_cutscene_55",
+    "vram": 234881024,
+    "size": 5328,
+    "sha256": "cd8cf6c3de3a7d289613cd3b79b93e99847ec997e467c7b2c3c246434fb426d8"
+  },
+  {
+    "id": 251,
+    "reference_name": "ni_ovl_cutscene_56",
+    "vram": 234881024,
+    "size": 5376,
+    "sha256": "1cba45d1253cc3b11147fc26b5bf153223a415ec0e892ba585845b4b38be916f"
+  },
+  {
+    "id": 252,
+    "reference_name": "ni_ovl_cutscene_57",
+    "vram": 234881024,
+    "size": 3872,
+    "sha256": "e232ef2c7a2370435974386611accae73a69cf39dfcb19fe38a1a242e5ed3af9"
+  },
+  {
+    "id": 253,
+    "reference_name": "ni_ovl_cutscene_63",
+    "vram": 234881024,
+    "size": 10544,
+    "sha256": "77b551bab5c5f90b97310a89301dc639cb2f0ec1dfba9930fa0082bb7c1de0f1"
+  }
+]

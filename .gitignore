@@ -1,0 +1,13 @@
+/build/
+/dist/
+/.qa/
+/text-tool/work/
+/text-tool/analysis/build-report.json
+/text-tool/analysis/release-audit.json
+/text-tool/analysis/gameplay-page-layout.json
+__pycache__/
+*.pyc
+*.spec
+*.z64
+*.n64
+*.v64

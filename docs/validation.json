@@ -1,0 +1,140 @@
+{
+  "version": "0.6",
+  "source_sha1": "aa70348968589e6ba6e7091ca115fb505099cd97",
+  "source_normalized_sha256": "f5b8a1bd8dd4d03b5fe291428b284ca30d9afd300fe25f60317aa1e4590db638",
+  "source_provided_v64_sha256": "078ac90a17f6fad57300a95fff7d4a9c34bc1d981009ba965bd637df84a9f2eb",
+  "target_sha256": "ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89",
+  "patch_sha256": "bd02ecff7a716a2adde077f2741cfbdbf89ca4a8d7e79252066d2ad37b428af7",
+  "executable_sha256": "b3cd72378da56d64203514d1ed7b3b989d167801cbe493b18f928feaf284fdf5",
+  "patcher": {
+    "version": "0.6",
+    "all_passed": true,
+    "checks": [
+      {
+        "name": "embedded_payload",
+        "passed": true
+      },
+      {
+        "name": "gui_initialization",
+        "passed": true
+      },
+      {
+        "name": "byte_order_1",
+        "passed": true
+      },
+      {
+        "name": "byte_order_2",
+        "passed": true
+      },
+      {
+        "name": "byte_order_4",
+        "passed": true
+      },
+      {
+        "name": "wrong_source_rejected",
+        "passed": true
+      },
+      {
+        "name": "original_overwrite_rejected",
+        "passed": true
+      },
+      {
+        "name": "existing_output_preserved",
+        "passed": true
+      }
+    ],
+    "source_original_preserved": true,
+    "target_sha256": "ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89",
+    "executable_sha256": "b3cd72378da56d64203514d1ed7b3b989d167801cbe493b18f928feaf284fdf5",
+    "frozen_executable_tested": true
+  },
+  "editor_rebuilt_same_target": true,
+  "translated_segments": 1067,
+  "untranslated_catalog_segments": 0,
+  "reviewed_unique_sources": 930,
+  "proofreading_corrected_segments": 40,
+  "assets_validated": 254,
+  "map_text_pointers_validated": 28,
+  "latin_font_pixels_preserved": true,
+  "english_title_pixels_preserved": true,
+  "audio_bytes_preserved": true,
+  "space": "U+0020",
+  "space_width_pixels": 8,
+  "checksum": "N64 CIC-6102 verified",
+  "runtime": [
+    {
+      "case": "coldboot",
+      "frames": 6300,
+      "native_fault": false
+    },
+    {
+      "case": "save",
+      "frames": 2400,
+      "native_fault": false
+    },
+    {
+      "case": "load",
+      "frames": 3600,
+      "native_fault": false
+    },
+    {
+      "case": "inventory-carrie",
+      "frames": 2600,
+      "native_fault": false
+    },
+    {
+      "case": "credits",
+      "frames": 14000,
+      "native_fault": false
+    },
+    {
+      "case": "credits-clear",
+      "frames": 3000,
+      "native_fault": false
+    },
+    {
+      "case": "scene-54",
+      "frames": 4200,
+      "native_fault": false
+    },
+    {
+      "case": "scene-16",
+      "frames": 4200,
+      "native_fault": false
+    }
+  ],
+  "coverage_candidate_review": {
+    "broad_candidates_reviewed": 26,
+    "structured_candidates_reviewed": 8,
+    "structured_false_positives": {
+      "MIPS_instruction_words": 6,
+      "numeric_texture_or_model_data": 2
+    },
+    "additional_confirmed_native_text_omissions": 0
+  },
+  "texture_review": {
+    "menu_and_item_CI4_candidates_inspected": 100,
+    "map_CI4_texture_references": 1077,
+    "unique_map_CI4_images_inspected": 1022,
+    "atlas_pages_inspected": 16,
+    "additional_confirmed_japanese_graphic_text": 0,
+    "all_texture_formats_exhaustively_covered": false,
+    "small_decorative_text_not_legible_in_full": [
+      {
+        "atlas_entry": 40,
+        "asset": 60,
+        "offset": "0xFD80"
+      },
+      {
+        "atlas_entry": 665,
+        "asset": 74,
+        "offset": "0xEC80"
+      }
+    ]
+  },
+  "limitations": [
+    "모든 플레이 분기를 처음부터 끝까지 완주한 검증은 아닙니다.",
+    "일부 저해상도 배경 글씨는 완전히 판독하지 못했습니다.",
+    "텍스처 검사는 모든 이미지 형식을 전수 조사한 것은 아닙니다."
+  ]
+}
