@@ -1,13 +1,13 @@
 {
-  "version": "0.6",
+  "version": "0.6.1",
   "source_sha1": "aa70348968589e6ba6e7091ca115fb505099cd97",
   "source_normalized_sha256": "f5b8a1bd8dd4d03b5fe291428b284ca30d9afd300fe25f60317aa1e4590db638",
   "source_provided_v64_sha256": "078ac90a17f6fad57300a95fff7d4a9c34bc1d981009ba965bd637df84a9f2eb",
-  "target_sha256": "ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89",
-  "patch_sha256": "bd02ecff7a716a2adde077f2741cfbdbf89ca4a8d7e79252066d2ad37b428af7",
-  "executable_sha256": "b3cd72378da56d64203514d1ed7b3b989d167801cbe493b18f928feaf284fdf5",
+  "target_sha256": "9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd",
+  "patch_sha256": "e605e29409e3709c3797469e64e85a62f9c9d29919a5b6f8032a7aeae355bd6a",
+  "executable_sha256": "f1bb078ce11a7e71633c7f056c9f28283f695e98a9f8f75e5279d12a3379bbac",
   "patcher": {
-    "version": "0.6",
+    "version": "0.6.1",
     "all_passed": true,
     "checks": [
       {
@@ -44,8 +44,8 @@
       }
     ],
     "source_original_preserved": true,
-    "target_sha256": "ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89",
-    "executable_sha256": "b3cd72378da56d64203514d1ed7b3b989d167801cbe493b18f928feaf284fdf5",
+    "target_sha256": "9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd",
+    "executable_sha256": "f1bb078ce11a7e71633c7f056c9f28283f695e98a9f8f75e5279d12a3379bbac",
     "frozen_executable_tested": true
   },
   "editor_rebuilt_same_target": true,
@@ -65,44 +65,515 @@
     {
       "case": "coldboot",
       "frames": 6300,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "save",
       "frames": 2400,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "load",
       "frames": 3600,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "inventory-carrie",
       "frames": 2600,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "credits",
       "frames": 14000,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "credits-clear",
       "frames": 3000,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "scene-54",
       "frames": 4200,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
     },
     {
       "case": "scene-16",
       "frames": 4200,
-      "native_fault": false
+      "native_fault": false,
+      "version": "0.6"
+    },
+    {
+      "case": "banner-fixed-coldboot-20261029",
+      "frames": 5200,
+      "native_fault": false,
+      "version": "0.6.1"
+    },
+    {
+      "case": "banner-fixed-full-opening-20261029",
+      "frames": 8000,
+      "native_fault": false,
+      "version": "0.6.1"
     }
   ],
+  "stage_banner_regression": [
+    {
+      "index": 0,
+      "id": "asset_182:000782",
+      "target": "침묵의 숲",
+      "original_width": 64,
+      "width": 72,
+      "map": 0,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 0,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 1,
+      "id": "asset_182:00078E",
+      "target": "성벽",
+      "original_width": 32,
+      "width": 32,
+      "map": 2,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 2,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          32
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 4,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 2,
+      "id": "asset_182:000796",
+      "target": "악마성 별관",
+      "original_width": 80,
+      "width": 88,
+      "map": 3,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 3,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          96
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 7,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 3,
+      "id": "asset_182:0007A4",
+      "target": "지하 갱도",
+      "original_width": 64,
+      "width": 72,
+      "map": 7,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 7,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 4,
+      "id": "asset_182:0007B0",
+      "target": "지하 수로",
+      "original_width": 64,
+      "width": 72,
+      "map": 8,
+      "character": 1,
+      "passed": true,
+      "runtime": {
+        "map": 8,
+        "character": 1,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 5,
+      "id": "asset_182:0007BC",
+      "target": "악마성 중심부",
+      "original_width": 96,
+      "width": 104,
+      "map": 9,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 9,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          112
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 8,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 6,
+      "id": "asset_182:0007CC",
+      "target": "결투의 탑",
+      "original_width": 48,
+      "width": 72,
+      "map": 19,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 19,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 7,
+      "id": "asset_182:0007D6",
+      "target": "과학의 탑",
+      "original_width": 48,
+      "width": 72,
+      "map": 18,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 18,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 8,
+      "id": "asset_182:0007E0",
+      "target": "처형의 탑",
+      "original_width": 48,
+      "width": 72,
+      "map": 16,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 16,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 9,
+      "id": "asset_182:0007EA",
+      "target": "마법의 탑",
+      "original_width": 48,
+      "width": 72,
+      "map": 17,
+      "character": 1,
+      "passed": true,
+      "runtime": {
+        "map": 17,
+        "character": 1,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 10,
+      "id": "asset_182:0007F4",
+      "target": "시계의 방",
+      "original_width": 80,
+      "width": 72,
+      "map": 27,
+      "character": 1,
+      "passed": true,
+      "runtime": {
+        "map": 27,
+        "character": 1,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          80
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 6,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 11,
+      "id": "asset_182:000802",
+      "target": "시계탑",
+      "original_width": 48,
+      "width": 48,
+      "map": 23,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 23,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          48
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 5,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    },
+    {
+      "index": 12,
+      "id": "asset_182:00080C",
+      "target": "악마성 천수각",
+      "original_width": 80,
+      "width": 104,
+      "map": 21,
+      "character": 0,
+      "passed": true,
+      "runtime": {
+        "map": 21,
+        "character": 0,
+        "frames": 550,
+        "observed": true,
+        "widths": [
+          112
+        ],
+        "timers": [
+          90
+        ],
+        "arrow_states": [
+          0
+        ],
+        "y_offsets": [
+          0
+        ],
+        "max_scroll_timer": 0,
+        "first_complete_active_time": 8,
+        "faulted_thread": 0,
+        "live_idle_samples": 90,
+        "measurement_scope": "expected map banner, live idle phase, active_time 1..90"
+      }
+    }
+  ],
+  "binary_changes_from_v0_6": {
+    "changed_assets": [
+      182
+    ],
+    "changed_byte_offsets": [
+      2133,
+      2137,
+      2139,
+      2141,
+      2143,
+      2145,
+      2147,
+      2149,
+      2151,
+      2153,
+      2157
+    ],
+    "all_changes_inside_stage_name_width_table": true,
+    "other_253_assets_identical": true
+  },
   "coverage_candidate_review": {
     "broad_candidates_reviewed": 26,
     "structured_candidates_reviewed": 8,

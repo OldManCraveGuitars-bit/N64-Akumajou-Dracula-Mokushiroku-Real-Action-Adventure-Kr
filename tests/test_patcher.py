@@ -69,4 +69,33 @@ class PatcherTests(unittest.TestCase):
         self.assertEqual(result.returncode,0,result.stderr.decode(errors='replace'))
         self.assertTrue(json.loads(report.read_text())['image_loaded'])
 
+    def test_actual_rom_stage_banners_fit_one_line(self):
+        import importlib.util,struct
+        from bps import apply
+        spec=importlib.util.spec_from_file_location('cv64_test_lzkn64',ROOT/'text-tool/tools/lzkn64.py')
+        lz=importlib.util.module_from_spec(spec)
+        sys.path.insert(0,str(ROOT/'text-tool/tools'))
+        try:spec.loader.exec_module(lz)
+        finally:sys.path.pop(0)
+        patch,_=load_bundle(ROOT/'data');target=apply(self.normalized,patch)
+        table_entry=0x979CC+182*8
+        def extract(rom):
+            start,end=struct.unpack_from('>II',rom,table_entry)
+            return lz.decompress(rom[start&0x7FFFFFFF:end])
+        original=extract(self.normalized);translated=extract(target)
+        segments=json.loads((ROOT/'text-tool/translation/segments.json').read_text(encoding='utf-8'))
+        overrides={}
+        for path in sorted((ROOT/'text-tool/translation').glob('ko*.json')):
+            overrides.update(json.loads(path.read_text(encoding='utf-8')))
+        names=[s for s in segments if s['id'].startswith('asset_182:')]
+        self.assertEqual(len(names),13)
+        widths=struct.unpack_from('>13H',translated,0x854)
+        for name,width in zip(sorted(names,key=lambda s:s['id']),widths):
+            text=overrides[name['id']]
+            self.assertNotIn('\n',text)
+            required=sum(8 if c==' ' else 16 for c in text)
+            self.assertGreaterEqual(width,required,(text,width,required))
+        self.assertEqual(struct.unpack_from('>I',translated,0x2E4)[0],0x240D005A)
+        self.assertEqual(original[0x2E4:0x2E8],translated[0x2E4:0x2E8])
+
 if __name__=='__main__':unittest.main()

@@ -12,6 +12,7 @@ from native_font import install_resident,encode
 from lzkn64 import compress
 from relocate import relocate_references
 from n64_crc import identify,update
+from stage_name_layout import apply_stage_name_layout
 
 
 def rebuild_block(block,project,glyph_map):
@@ -47,6 +48,7 @@ def main():
     characters=characters.replace('\n','')
     glyph_map=install_resident(rom,characters)
     assets={a['id']:bytearray((ROOT/'work/assets'/a['file']).read_bytes()) for a in manifest['assets']}
+    stage_layout=apply_stage_name_layout(assets[182],project)
     changed=set();report=[];issues=[]
     for block in [b for b in blocks if b['source']!='rom']:
         asset_id=int(block['source'].split('_')[1]);asset=manifest['assets'][asset_id];data=assets[asset_id]
@@ -154,7 +156,8 @@ def main():
     metadata=dict(status='private candidate; runtime QA in progress',
                   catalog=project.stats(),resident_text_start=common_start,resident_text_end=cursor,
                   glyphs={c:f'{v:04X}' for c,v in glyph_map.items()},relocations=report,
-                  resident_references=resident_refs,allocation_records=allocation_records,issues=issues)
+                  resident_references=resident_refs,allocation_records=allocation_records,issues=issues,
+                  stage_name_layout=stage_layout)
     report_path.write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
     if issues:raise ValueError(f"{len(issues)} unresolved relocations; see {report_path}")
     for asset_id in sorted(changed):
@@ -165,7 +168,7 @@ def main():
         struct.pack_into('>I',rom,0x971C8+asset_id*8+4,manifest['assets'][asset_id]['vram']+len(data))
     if len(rom)>0x1000000:raise ValueError('Candidate exceeds 16 MiB address audit boundary')
     rom.extend(bytes(0x1000000-len(rom)));update(rom,cic)
-    dest=ROOT/'work/korean-candidate-v007.z64';dest.write_bytes(rom)
+    dest=ROOT/'work/korean-candidate-v008.z64';dest.write_bytes(rom)
     metadata.update(rom_sha256=hashlib.sha256(rom).hexdigest(),changed_assets=sorted(changed),output=str(dest),cic=cic)
     report_path.write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(dict(output=str(dest),changed_assets=len(changed),catalog=project.stats(),resident_bytes=cursor-common_start),ensure_ascii=False,indent=2))

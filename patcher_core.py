@@ -7,11 +7,11 @@ from pathlib import Path
 from typing import Callable
 from bps import apply as apply_bps
 
-VERSION = '0.6'
+VERSION = '0.6.1'
 SOURCE_SHA1 = 'aa70348968589e6ba6e7091ca115fb505099cd97'
 SOURCE_SHA256 = 'f5b8a1bd8dd4d03b5fe291428b284ca30d9afd300fe25f60317aa1e4590db638'
-TARGET_SHA256 = 'ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89'
-OUTPUT_NAME = 'Akumajou Dracula Mokushiroku (Japan) (Korean v0.6).z64'
+TARGET_SHA256 = '9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd'
+OUTPUT_NAME = f'Akumajou Dracula Mokushiroku (Japan) (Korean v{VERSION}).z64'
 
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()

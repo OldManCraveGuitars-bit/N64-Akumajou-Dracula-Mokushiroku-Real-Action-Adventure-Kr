@@ -34,6 +34,10 @@ def main():
     audio_start=0x107000;audio_end=manifest['assets'][0]['start']
     assert original[audio_start:audio_end]==rom[audio_start:audio_end]
     project=Project();assert not project.validate() and not project.stats()['pending']
+    from stage_name_layout import stage_names,WIDTH_TABLE_OFFSET,ACTIVE_TIME_INSTRUCTION_OFFSET,ACTIVE_TIME_INSTRUCTION
+    stage_rows=stage_names(project)
+    assert struct.unpack_from('>13H',assets[182],WIDTH_TABLE_OFFSET)==tuple(r['width'] for r in stage_rows)
+    assert struct.unpack_from('>I',assets[182],ACTIVE_TIME_INSTRUCTION_OFFSET)[0]==ACTIVE_TIME_INSTRUCTION
     glyphs={c:int(code,16) for c,code in report['glyphs'].items()}
     blocks={b['id']:b for b in read_json(ROOT/'analysis/selected-blocks.json')}
     for relocation in report['relocations']:
@@ -49,7 +53,9 @@ def main():
                 latin_font_pixels_preserved=True,space_width_pixels=8,
                 english_logo_pixels_preserved=True,other_title_graphics_preserved=True,
                 audio_region_preserved=[audio_start,audio_end],audio_sha256=hashlib.sha256(rom[audio_start:audio_end]).hexdigest(),
-                n64_header_checksum_valid=True,layout_and_english_text_validation_passed=True)
+                n64_header_checksum_valid=True,layout_and_english_text_validation_passed=True,
+                entrance_map_names_fit_single_line=True,entrance_map_name_duration_preserved=True,
+                entrance_map_name_widths=stage_rows)
     (ROOT/'analysis/release-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
 

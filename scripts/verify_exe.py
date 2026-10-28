@@ -12,7 +12,7 @@ from patcher_core import normalize, TARGET_SHA256, VERSION
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('original',type=Path);args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
-    exe=root/'dist/N64-Akumajou-Dracula-Mokushiroku-Kr-v0.6-Patcher.exe'
+    exe=root/f'dist/N64-Akumajou-Dracula-Mokushiroku-Kr-v{VERSION}-Patcher.exe'
     original=args.original.read_bytes();normalized=normalize(original);checks=[]
     with tempfile.TemporaryDirectory(prefix='cv64-frozen-check-') as temporary:
         folder=Path(temporary)
