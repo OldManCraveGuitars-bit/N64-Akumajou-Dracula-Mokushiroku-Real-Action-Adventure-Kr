@@ -1,4 +1,4 @@
-악마성 드라큘라 묵시록 한국어 v0.6.1 텍스트 도구
+악마성 드라큘라 묵시록 한국어 v0.65 텍스트 도구
 
 Python 3.11 이상과 Pillow가 필요합니다.
 python -m pip install -r requirements.txt
@@ -9,15 +9,15 @@ python -m pip install -r requirements.txt
 번역 검증 및 롬 빌드를 지원합니다.
 
 수정 파일: translation/user_edits.json
-빌드 결과: work/korean-candidate-v008.z64
+빌드 결과: work/korean-candidate-v014.z64
 수정한 결과를 에뮬레이터에서 새로 부팅해 확인하세요.
 
 원본 정규화 SHA1: aa70348968589e6ba6e7091ca115fb505099cd97
-기본 번역 결과 SHA256: 9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd
+기본 번역 결과 SHA256: 74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182
 
 띄어쓰기는 U+0020 반각 공백이며 게임 내 8픽셀입니다.
-게임 창 240픽셀, 아이템 이름 150픽셀, 작은 메뉴 100/128픽셀 폭을 검사합니다.
-기존 영문과 대사 제어 명령을 보존합니다.
+게임 창 240픽셀, 아이템 이름 150픽셀, 작은 메뉴 96/100픽셀 폭을 검사합니다.
+캐릭터 이름을 한글화하며, 그 외 기존 영문과 대사 제어 명령을 보존합니다.
 한국어 로고와 기존 한글 글자 픽셀은 고정 데이터로 포함되어 있습니다.
 새 한글 글자를 추가하면 Windows 굴림에서 생성합니다.
 

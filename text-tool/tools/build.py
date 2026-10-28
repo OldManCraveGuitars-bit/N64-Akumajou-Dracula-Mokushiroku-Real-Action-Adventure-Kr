@@ -13,6 +13,8 @@ from lzkn64 import compress
 from relocate import relocate_references
 from n64_crc import identify,update
 from stage_name_layout import apply_stage_name_layout
+from character_select_names import install_names
+from pause_name_layout import apply_pause_name_layout
 
 
 def rebuild_block(block,project,glyph_map):
@@ -49,6 +51,7 @@ def main():
     glyph_map=install_resident(rom,characters)
     assets={a['id']:bytearray((ROOT/'work/assets'/a['file']).read_bytes()) for a in manifest['assets']}
     stage_layout=apply_stage_name_layout(assets[182],project)
+    pause_name_layout=apply_pause_name_layout(assets[174])
     changed=set();report=[];issues=[]
     for block in [b for b in blocks if b['source']!='rom']:
         asset_id=int(block['source'].split('_')[1]);asset=manifest['assets'][asset_id];data=assets[asset_id]
@@ -95,6 +98,8 @@ def main():
         resident.append(dict(old_base=0x8007D0A0+block['offset'],old_end=0x8007D0A0+block['end'],
                              new_base=0x8007D0A0+cursor,mapping=offset_map,block=block['id']))
         rom[cursor:cursor+len(payload)]=payload;cursor+=len(payload)
+    cursor,character_names=install_names(rom,assets[175],project,glyph_map,cursor)
+    changed.add(175)
     if cursor>0x104B40:raise ValueError(f'Resident text exceeds font reserve: {cursor:08X}')
     def resident_mapper(value):
         for item in resident:
@@ -156,8 +161,8 @@ def main():
     metadata=dict(status='private candidate; runtime QA in progress',
                   catalog=project.stats(),resident_text_start=common_start,resident_text_end=cursor,
                   glyphs={c:f'{v:04X}' for c,v in glyph_map.items()},relocations=report,
-                  resident_references=resident_refs,allocation_records=allocation_records,issues=issues,
-                  stage_name_layout=stage_layout)
+                  resident_references=resident_refs,resident_blocks=resident,allocation_records=allocation_records,issues=issues,
+                  stage_name_layout=stage_layout,pause_name_layout=pause_name_layout,character_selection_names=character_names)
     report_path.write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
     if issues:raise ValueError(f"{len(issues)} unresolved relocations; see {report_path}")
     for asset_id in sorted(changed):
@@ -168,7 +173,7 @@ def main():
         struct.pack_into('>I',rom,0x971C8+asset_id*8+4,manifest['assets'][asset_id]['vram']+len(data))
     if len(rom)>0x1000000:raise ValueError('Candidate exceeds 16 MiB address audit boundary')
     rom.extend(bytes(0x1000000-len(rom)));update(rom,cic)
-    dest=ROOT/'work/korean-candidate-v008.z64';dest.write_bytes(rom)
+    dest=ROOT/'work/korean-candidate-v014.z64';dest.write_bytes(rom)
     metadata.update(rom_sha256=hashlib.sha256(rom).hexdigest(),changed_assets=sorted(changed),output=str(dest),cic=cic)
     report_path.write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(dict(output=str(dest),changed_assets=len(changed),catalog=project.stats(),resident_bytes=cursor-common_start),ensure_ascii=False,indent=2))

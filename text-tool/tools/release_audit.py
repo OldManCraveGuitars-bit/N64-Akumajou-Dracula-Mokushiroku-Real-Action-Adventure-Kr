@@ -45,6 +45,27 @@ def main():
         expected,_=rebuild_block(block,project,glyphs);expected.extend(b'\0\0')
         offset=relocation['new_base']-asset['vram']
         assert assets[asset['id']][offset:offset+len(expected)]==expected
+    # Check the shared menu table independently, including every other English string.
+    for relocation in report['resident_blocks']:
+        block=blocks[relocation['block']]
+        expected,_=rebuild_block(block,project,glyphs);expected.extend(b'\0\0')
+        offset=relocation['new_base']-0x8007D0A0
+        assert rom[offset:offset+len(expected)]==expected
+    from character_select_names import PATCHES,NAME_IDS
+    name_rows=report['character_selection_names']
+    for patch,key,row in zip(PATCHES,NAME_IDS,name_rows):
+        assert row['id']==key and row['target']==project.target(project.by_id[key])
+        assert struct.unpack_from('>I',assets[175],patch['position'])[0]==0x24050000|row['text_x']
+        assert row['text_x']+row['width']//2==patch['center']
+        assert struct.unpack_from('>I',assets[175],patch['y_position'])[0]==0x240600AE
+        assert row['text_y']==174
+    original175=(ROOT/'work/assets'/manifest['assets'][175]['file']).read_bytes()
+    # Selection still uses the native shared menu name IDs and original text flags.
+    for offset in (0x708,0x784,0x790,0x7A0,0x7F8,0x864,0x86C,0x878):
+        assert assets[175][offset:offset+4]==original175[offset:offset+4]
+    assert project.target(project.by_id['asset_174:002A22'])=='종료할까요?'
+    from pause_name_layout import SCALE_OFFSET
+    assert struct.unpack_from('>I',assets[174],SCALE_OFFSET)[0]==0x3F800000
     from validate_layout import main as layout_check
     assert not layout_check()
     result=dict(rom=report['output'],sha256=report['rom_sha256'],size=len(rom),cic=identify(rom),
@@ -55,7 +76,8 @@ def main():
                 audio_region_preserved=[audio_start,audio_end],audio_sha256=hashlib.sha256(rom[audio_start:audio_end]).hexdigest(),
                 n64_header_checksum_valid=True,layout_and_english_text_validation_passed=True,
                 entrance_map_names_fit_single_line=True,entrance_map_name_duration_preserved=True,
-                entrance_map_name_widths=stage_rows)
+                entrance_map_name_widths=stage_rows,character_names_shared_and_localized=True,
+                character_selection_names_centered=True,quit_confirmation_shortened=True)
     (ROOT/'analysis/release-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
 

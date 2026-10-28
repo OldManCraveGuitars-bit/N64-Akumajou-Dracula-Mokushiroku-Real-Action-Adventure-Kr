@@ -1,0 +1,112 @@
+{
+  "version": "0.65",
+  "baseline": "v0.6.1",
+  "date": "2026-10-29",
+  "all_unique_pairs_reviewed": true,
+  "reviewed_unique_sources": 934,
+  "total_segments": 1071,
+  "japanese_segments": 1067,
+  "english_name_entries": 4,
+  "unused_name_entries": [
+    "Cornel",
+    "Coller"
+  ],
+  "duplicate_source_variants_reviewed": true,
+  "text_changes": [
+    {
+      "id": "asset_167:000AB4",
+      "source": "烈き分各催王のため、\nゲームノートが直情真道ません。\nこのゲームは、1ノートと\n9ページが可能です。\n催能なデータを<3307>深してください。\nセーブしないで火ける早既は\nAボタンを東してください。\n",
+      "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+      "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+      "reason": "남은 저장 용량 안내 표현 수정"
+    },
+    {
+      "id": "asset_167:000B78",
+      "source": "烈き分各催王のため、\nゲームノートが直情真道ません。\nこのゲームは、1ノートと\n9ページが可能です。\n催能なデータを<3307>深してください。\nセーブしないで火ける早既は\nAボタンを東してください。\n",
+      "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+      "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+      "reason": "남은 저장 용량 안내 표현 수정"
+    },
+    {
+      "id": "asset_174:002A22",
+      "source": "よろしいですか?",
+      "before": "사용할까요?",
+      "after": "종료할까요?",
+      "reason": "종료 전용 확인 문구와 시각적 창 이탈 수정"
+    },
+    {
+      "id": "asset_176:0021E4",
+      "source": "空き容量不足の為、ゲームノート\nが作成できません。\nこのゲームは、1ノートと\n              9ページ必要です。\n不要なデータを削除して下さい。\nセーブしないで続けるには、\nAボタンを押して下さい。",
+      "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.",
+      "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.",
+      "reason": "남은 저장 용량 안내 표현 수정"
+    },
+    {
+      "id": "asset_177:0006C0",
+      "source": "空きノートが足りません。\n何かボタンを押して下さい。",
+      "before": "빈 메모가 부족합니다.\n아무 버튼이나 누르세요.",
+      "after": "빈 메모 칸이 부족합니다.\n아무 버튼이나 누르세요.",
+      "reason": "컨트롤러 팩 메모 슬롯 부족임을 명확히 표시"
+    },
+    {
+      "id": "asset_177:0007D6",
+      "source": "よろしいですか?",
+      "before": "사용할까요?",
+      "after": "진행할까요?",
+      "reason": "파일 처리 공용 확인 문구에 잘못 들어간 아이템 사용 의미 수정"
+    },
+    {
+      "id": "rom:0F21A8",
+      "source": "Reinhardt",
+      "before": "Reinhardt",
+      "after": "라인하르트",
+      "reason": "캐릭터 이름 공통 테이블 한글화"
+    },
+    {
+      "id": "rom:0F21BC",
+      "source": "Carrie",
+      "before": "Carrie",
+      "after": "캐리",
+      "reason": "캐릭터 이름 공통 테이블 한글화"
+    },
+    {
+      "id": "rom:0F21CA",
+      "source": "Cornel",
+      "before": "Cornel",
+      "after": "코넬",
+      "reason": "캐릭터 이름 공통 테이블 한글화"
+    },
+    {
+      "id": "rom:0F21D8",
+      "source": "Coller",
+      "before": "Coller",
+      "after": "콜러",
+      "reason": "캐릭터 이름 공통 테이블 한글화"
+    }
+  ],
+  "layout_changes": [
+    {
+      "context": "character selection",
+      "x": [
+        72,
+        194
+      ],
+      "y_before": 170,
+      "y_after": 174,
+      "centering": "portrait centers"
+    },
+    {
+      "context": "pause character name",
+      "scale_before": 0.9,
+      "scale_after": 1.0,
+      "reason": "avoid dropping thin Hangul strokes during fractional reduction"
+    }
+  ],
+  "space": "U+0020",
+  "space_width": 8,
+  "other_english_preserved": true,
+  "limitations": [
+    "모든 플레이 분기를 처음부터 끝까지 완주한 검수는 아님",
+    "배경의 저해상도 장식 글씨 일부는 판독 불가"
+  ]
+}

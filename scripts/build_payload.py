@@ -19,7 +19,7 @@ def main():
     folder=Path(__file__).resolve().parents[1]/'data'
     patch_name=f'Akumajou-Dracula-Mokushiroku-Korean-v{VERSION}.bps'
     metadata=json.dumps(dict(game='Castlevania 64 Japan',version=VERSION,language='Korean',
-                             english='preserved',target_sha256=TARGET_SHA256),sort_keys=True).encode()
+                             english='preserved except character names',target_sha256=TARGET_SHA256),sort_keys=True).encode()
     patch=create(source,target,metadata)
     assert apply(source,patch)==target
     (folder/patch_name).write_bytes(patch)

@@ -1,11 +1,11 @@
 {
-  "version": "0.6.1",
-  "patch_file": "Akumajou-Dracula-Mokushiroku-Korean-v0.6.1.bps",
-  "patch_sha256": "e605e29409e3709c3797469e64e85a62f9c9d29919a5b6f8032a7aeae355bd6a",
-  "patch_bytes": 4260208,
+  "version": "0.65",
+  "patch_file": "Akumajou-Dracula-Mokushiroku-Korean-v0.65.bps",
+  "patch_sha256": "05d5ab8a2c6d20833ec24d29c5cbfd056a46f05a144ac29d243571480e431e80",
+  "patch_bytes": 4261231,
   "source_sha1": "aa70348968589e6ba6e7091ca115fb505099cd97",
   "source_sha256": "f5b8a1bd8dd4d03b5fe291428b284ca30d9afd300fe25f60317aa1e4590db638",
   "source_bytes": 12582912,
-  "target_sha256": "9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd",
+  "target_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
   "target_bytes": 16777216
 }

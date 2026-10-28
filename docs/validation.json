@@ -1,13 +1,13 @@
 {
-  "version": "0.6.1",
+  "version": "0.65",
   "source_sha1": "aa70348968589e6ba6e7091ca115fb505099cd97",
   "source_normalized_sha256": "f5b8a1bd8dd4d03b5fe291428b284ca30d9afd300fe25f60317aa1e4590db638",
   "source_provided_v64_sha256": "078ac90a17f6fad57300a95fff7d4a9c34bc1d981009ba965bd637df84a9f2eb",
-  "target_sha256": "9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd",
-  "patch_sha256": "e605e29409e3709c3797469e64e85a62f9c9d29919a5b6f8032a7aeae355bd6a",
-  "executable_sha256": "f1bb078ce11a7e71633c7f056c9f28283f695e98a9f8f75e5279d12a3379bbac",
+  "target_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+  "patch_sha256": "05d5ab8a2c6d20833ec24d29c5cbfd056a46f05a144ac29d243571480e431e80",
+  "executable_sha256": "30a2565f4d847bf24a936979049eb6454d8815f1864ec778340dc1aeeda14bd8",
   "patcher": {
-    "version": "0.6.1",
+    "version": "0.65",
     "all_passed": true,
     "checks": [
       {
@@ -44,14 +44,16 @@
       }
     ],
     "source_original_preserved": true,
-    "target_sha256": "9fcc7bb34de13ad953ebb6b48d1e9b6b0236f74ba0c70c048c50423d88419fdd",
-    "executable_sha256": "f1bb078ce11a7e71633c7f056c9f28283f695e98a9f8f75e5279d12a3379bbac",
+    "target_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+    "executable_sha256": "30a2565f4d847bf24a936979049eb6454d8815f1864ec778340dc1aeeda14bd8",
     "frozen_executable_tested": true
   },
   "editor_rebuilt_same_target": true,
-  "translated_segments": 1067,
+  "translated_segments": 1071,
+  "japanese_segments": 1067,
+  "localized_character_name_entries": 4,
   "untranslated_catalog_segments": 0,
-  "reviewed_unique_sources": 930,
+  "reviewed_unique_sources": 934,
   "proofreading_corrected_segments": 40,
   "assets_validated": 254,
   "map_text_pointers_validated": 28,
@@ -63,64 +65,100 @@
   "checksum": "N64 CIC-6102 verified",
   "runtime": [
     {
-      "case": "coldboot",
-      "frames": 6300,
+      "case": "coldboot-carrie",
+      "frames": 6000,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 1,
+      "map": 0
     },
     {
-      "case": "save",
+      "case": "coldboot-reinhardt",
+      "frames": 8000,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+      "native_fault": false,
+      "character": 0,
+      "map": 0
+    },
+    {
+      "case": "exit-no",
+      "frames": 1900,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+      "native_fault": false,
+      "character": 0,
+      "map": 0
+    },
+    {
+      "case": "exit-yes",
       "frames": 2400,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 0,
+      "map": 0
     },
     {
-      "case": "load",
-      "frames": 3600,
+      "case": "inventory-reinhardt",
+      "frames": 2600,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 0,
+      "map": 4
     },
     {
       "case": "inventory-carrie",
       "frames": 2600,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 1,
+      "map": 4
+    },
+    {
+      "case": "save-basis",
+      "frames": 700,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+      "native_fault": false,
+      "character": 0,
+      "map": 4
+    },
+    {
+      "case": "save",
+      "frames": 2400,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
+      "native_fault": false,
+      "character": 0,
+      "map": 4
     },
     {
       "case": "credits",
       "frames": 14000,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 0,
+      "map": 65535
     },
     {
-      "case": "credits-clear",
-      "frames": 3000,
+      "case": "load",
+      "frames": 3600,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
-    },
-    {
-      "case": "scene-54",
-      "frames": 4200,
-      "native_fault": false,
-      "version": "0.6"
+      "character": 0,
+      "map": 4
     },
     {
       "case": "scene-16",
       "frames": 4200,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6"
+      "character": 0,
+      "map": 14
     },
     {
-      "case": "banner-fixed-coldboot-20261029",
-      "frames": 5200,
+      "case": "scene-54",
+      "frames": 4200,
+      "rom_sha256": "74a61c6630ec118e920a886024bee4f9d9808aacb5f302e9030d8db3825f7182",
       "native_fault": false,
-      "version": "0.6.1"
-    },
-    {
-      "case": "banner-fixed-full-opening-20261029",
-      "frames": 8000,
-      "native_fault": false,
-      "version": "0.6.1"
+      "character": 1,
+      "map": 9
     }
   ],
   "stage_banner_regression": [
@@ -554,26 +592,127 @@
       }
     }
   ],
-  "binary_changes_from_v0_6": {
-    "changed_assets": [
-      182
-    ],
-    "changed_byte_offsets": [
-      2133,
-      2137,
-      2139,
-      2141,
-      2143,
-      2145,
-      2147,
-      2149,
-      2151,
-      2153,
-      2157
-    ],
-    "all_changes_inside_stage_name_width_table": true,
-    "other_253_assets_identical": true
+  "save_load": {
+    "changed_save_bytes": 512,
+    "loaded_map": 4,
+    "fresh_boot": true,
+    "passed": true
   },
+  "review_v065": {
+    "version": "0.65",
+    "baseline": "v0.6.1",
+    "date": "2026-10-29",
+    "all_unique_pairs_reviewed": true,
+    "reviewed_unique_sources": 934,
+    "total_segments": 1071,
+    "japanese_segments": 1067,
+    "english_name_entries": 4,
+    "unused_name_entries": [
+      "Cornel",
+      "Coller"
+    ],
+    "duplicate_source_variants_reviewed": true,
+    "text_changes": [
+      {
+        "id": "asset_167:000AB4",
+        "source": "烈き分各催王のため、\nゲームノートが直情真道ません。\nこのゲームは、1ノートと\n9ページが可能です。\n催能なデータを<3307>深してください。\nセーブしないで火ける早既は\nAボタンを東してください。\n",
+        "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+        "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+        "reason": "남은 저장 용량 안내 표현 수정"
+      },
+      {
+        "id": "asset_167:000B78",
+        "source": "烈き分各催王のため、\nゲームノートが直情真道ません。\nこのゲームは、1ノートと\n9ページが可能です。\n催能なデータを<3307>深してください。\nセーブしないで火ける早既は\nAボタンを東してください。\n",
+        "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+        "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.\n",
+        "reason": "남은 저장 용량 안내 표현 수정"
+      },
+      {
+        "id": "asset_174:002A22",
+        "source": "よろしいですか?",
+        "before": "사용할까요?",
+        "after": "종료할까요?",
+        "reason": "종료 전용 확인 문구와 시각적 창 이탈 수정"
+      },
+      {
+        "id": "asset_176:0021E4",
+        "source": "空き容量不足の為、ゲームノート\nが作成できません。\nこのゲームは、1ノートと\n              9ページ必要です。\n不要なデータを削除して下さい。\nセーブしないで続けるには、\nAボタンを押して下さい。",
+        "before": "빈 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.",
+        "after": "남은 용량이 부족하여\n게임 메모를 만들 수 없습니다.\n이 게임은 메모 1개와\n9페이지가 필요합니다.\n필요 없는 데이터를 지우세요.\n저장하지 않고 계속하려면\nA 버튼을 누르세요.",
+        "reason": "남은 저장 용량 안내 표현 수정"
+      },
+      {
+        "id": "asset_177:0006C0",
+        "source": "空きノートが足りません。\n何かボタンを押して下さい。",
+        "before": "빈 메모가 부족합니다.\n아무 버튼이나 누르세요.",
+        "after": "빈 메모 칸이 부족합니다.\n아무 버튼이나 누르세요.",
+        "reason": "컨트롤러 팩 메모 슬롯 부족임을 명확히 표시"
+      },
+      {
+        "id": "asset_177:0007D6",
+        "source": "よろしいですか?",
+        "before": "사용할까요?",
+        "after": "진행할까요?",
+        "reason": "파일 처리 공용 확인 문구에 잘못 들어간 아이템 사용 의미 수정"
+      },
+      {
+        "id": "rom:0F21A8",
+        "source": "Reinhardt",
+        "before": "Reinhardt",
+        "after": "라인하르트",
+        "reason": "캐릭터 이름 공통 테이블 한글화"
+      },
+      {
+        "id": "rom:0F21BC",
+        "source": "Carrie",
+        "before": "Carrie",
+        "after": "캐리",
+        "reason": "캐릭터 이름 공통 테이블 한글화"
+      },
+      {
+        "id": "rom:0F21CA",
+        "source": "Cornel",
+        "before": "Cornel",
+        "after": "코넬",
+        "reason": "캐릭터 이름 공통 테이블 한글화"
+      },
+      {
+        "id": "rom:0F21D8",
+        "source": "Coller",
+        "before": "Coller",
+        "after": "콜러",
+        "reason": "캐릭터 이름 공통 테이블 한글화"
+      }
+    ],
+    "layout_changes": [
+      {
+        "context": "character selection",
+        "x": [
+          72,
+          194
+        ],
+        "y_before": 170,
+        "y_after": 174,
+        "centering": "portrait centers"
+      },
+      {
+        "context": "pause character name",
+        "scale_before": 0.9,
+        "scale_after": 1.0,
+        "reason": "avoid dropping thin Hangul strokes during fractional reduction"
+      }
+    ],
+    "space": "U+0020",
+    "space_width": 8,
+    "other_english_preserved": true,
+    "limitations": [
+      "모든 플레이 분기를 처음부터 끝까지 완주한 검수는 아님",
+      "배경의 저해상도 장식 글씨 일부는 판독 불가"
+    ]
+  },
+  "character_selection_names_centered": true,
+  "character_selection_names_y": 174,
+  "pause_character_name_scale": 1.0,
   "coverage_candidate_review": {
     "broad_candidates_reviewed": 26,
     "structured_candidates_reviewed": 8,

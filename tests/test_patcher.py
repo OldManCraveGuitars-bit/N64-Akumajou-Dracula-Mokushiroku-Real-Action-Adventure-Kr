@@ -69,6 +69,36 @@ class PatcherTests(unittest.TestCase):
         self.assertEqual(result.returncode,0,result.stderr.decode(errors='replace'))
         self.assertTrue(json.loads(report.read_text())['image_loaded'])
 
+    def test_actual_rom_menu_prompts_and_shared_character_names(self):
+        import struct
+        from bps import apply
+        sys.path.insert(0,str(ROOT/'text-tool/tools'))
+        try:
+            from translation_project import Project,read_json
+            from native_font import encode
+            from lzkn64 import decompress
+            from build import rebuild_block
+            project=Project(ROOT/'text-tool')
+            glyphs={c:0x3000+i for i,c in enumerate(sorted({c for s in project.segments for c in project.target(s) if ord(c)>127}))}
+            patch,_=load_bundle(ROOT/'data');target=apply(self.normalized,patch)
+            blocks=read_json(ROOT/'text-tool/analysis/selected-blocks.json')
+            menu=next(b for b in blocks if b['id']=='rom:0F2100')
+            expected,_=rebuild_block(menu,project,glyphs)
+            self.assertEqual(target.count(expected),1)
+            self.assertIn(encode('라인하르트',glyphs),expected)
+            self.assertIn(encode('캐리',glyphs),expected)
+            self.assertNotIn(encode('Reinhardt',glyphs),expected)
+            self.assertNotIn(encode('Carrie',glyphs),expected)
+            self.assertIn(encode('KEY CONFIG',glyphs),expected)
+            for asset_id,text in [(174,'종료할까요?'),(177,'진행할까요?')]:
+                start,end=struct.unpack_from('>II',target,0x979CC+asset_id*8)
+                data=decompress(target[start&0x7FFFFFFF:end])
+                self.assertIn(encode(text,glyphs),data)
+                if asset_id==174:
+                    self.assertEqual(struct.unpack_from('>f',data,0x2CA4)[0],1.0)
+        finally:
+            sys.path.pop(0)
+
     def test_actual_rom_stage_banners_fit_one_line(self):
         import importlib.util,struct
         from bps import apply

@@ -33,40 +33,35 @@ def main():
     frozen=read(dist/'patcher-verification.json');assert frozen['all_passed']
     exe=dist/f'N64-Akumajou-Dracula-Mokushiroku-Kr-v{VERSION}-Patcher.exe'
     assert sha(exe)==frozen['executable_sha256']
-    assert sha(ROOT/'.qa/editor/work/korean-candidate-v008.z64')==TARGET_SHA256
+    assert sha(ROOT/'.qa/editor/work/korean-candidate-v014.z64')==TARGET_SHA256
     build=read(private/'analysis/release-audit.json');assert build['sha256']==TARGET_SHA256
-    runtime=[]
-    for folder in ['proofread-coldboot','proofread-save','proofread-load','proofread-inventory-carrie',
-                   'proofread-credits','proofread-credits-clear','proofread-scene-54','proofread-scene-16']:
-        run=read(private/'qa'/folder/'run.json');ram=(private/'qa'/folder/'rdram.bin').read_bytes()
-        assert run['rom_sha256']=='ad2a0edc13d547385f4b234bcd740f448405acfabad95f0c251d822d88686e89' and run['frames']==run['frames_requested']
-        assert struct.unpack_from('<I',ram,0xA31D4)[0]==0
-        runtime.append(dict(case=folder.removeprefix('proofread-'),frames=run['frames'],native_fault=False,version='0.6'))
-    for folder in ['banner-fixed-coldboot-20261029','banner-fixed-full-opening-20261029']:
-        run=read(private/'qa'/folder/'run.json');ram=(private/'qa'/folder/'rdram.bin').read_bytes()
-        assert run['rom_sha256']==TARGET_SHA256 and run['frames']==run['frames_requested']
-        assert struct.unpack_from('<I',ram,0xA31D4)[0]==0
-        runtime.append(dict(case=folder,frames=run['frames'],native_fault=False,version=VERSION))
-    banners=read(private/'qa/banner-fixed-all-20261029/results.json')
+    suite=read(private/'qa/v065-final/summary.json')
+    assert suite['all_passed'] and suite['rom_sha256']==TARGET_SHA256
+    runtime=suite['cases']
+    assert len(runtime)>=12 and all(r['rom_sha256']==TARGET_SHA256 and not r['native_fault'] for r in runtime)
+    banners=read(private/'qa/v065-final/banners/results.json')
     assert len(banners)==13 and all(r['passed'] for r in banners)
-    binary_diff=read(private/'analysis/stage-banner-binary-diff.json')
-    assert binary_diff['changed_assets']==[182] and binary_diff['all_changes_inside_stage_name_width_table']
+    review=read(private/'analysis/review-v065.json')
+    assert review['all_unique_pairs_reviewed'] and review['reviewed_unique_sources']==934
     coverage=read(private/'analysis/coverage-audit.json')
     verification=dict(version=VERSION,source_sha1=SOURCE_SHA1,source_normalized_sha256=SOURCE_SHA256,
         source_provided_v64_sha256='078ac90a17f6fad57300a95fff7d4a9c34bc1d981009ba965bd637df84a9f2eb',
         target_sha256=TARGET_SHA256,patch_sha256=manifest['patch_sha256'],
         executable_sha256=sha(exe),patcher=frozen,editor_rebuilt_same_target=True,
-        translated_segments=1067,untranslated_catalog_segments=0,reviewed_unique_sources=930,
+        translated_segments=1071,japanese_segments=1067,localized_character_name_entries=4,
+        untranslated_catalog_segments=0,reviewed_unique_sources=934,
         proofreading_corrected_segments=40,assets_validated=254,map_text_pointers_validated=28,
         latin_font_pixels_preserved=True,english_title_pixels_preserved=True,audio_bytes_preserved=True,
         space='U+0020',space_width_pixels=8,checksum='N64 CIC-6102 verified',runtime=runtime,
-        stage_banner_regression=banners,binary_changes_from_v0_6=binary_diff,
+        stage_banner_regression=banners,save_load=suite['save_load'],review_v065=review,
+        character_selection_names_centered=True,character_selection_names_y=174,pause_character_name_scale=1.0,
         coverage_candidate_review=coverage['candidate_review'],texture_review=coverage['texture_review'],
         limitations=['모든 플레이 분기를 처음부터 끝까지 완주한 검증은 아닙니다.',
                      '일부 저해상도 배경 글씨는 완전히 판독하지 못했습니다.',
                      '텍스처 검사는 모든 이미지 형식을 전수 조사한 것은 아닙니다.'])
     (ROOT/'docs/validation.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     shutil.copy2(private/'analysis/proofread-2026-10-23.json',ROOT/'docs/proofreading.json')
+    shutil.copy2(private/'analysis/review-v065.json',ROOT/f'docs/review-v{VERSION}.json')
     shutil.copy2(ROOT/'data'/manifest['patch_file'],dist/manifest['patch_file'])
     guide=f'''악마성 드라큘라 묵시록 N64 일본판 한국어 패치 v{VERSION}
 
@@ -84,18 +79,22 @@ EXE SHA256: {sha(exe)}
 BPS SHA256: {manifest['patch_sha256']}
 
 일본어 텍스트 1,067구간, 일본어 타이틀 로고, 기존 컷신 자막을 한국어로 바꿨습니다.
-영어 메뉴, 영문 부제, 영어 음성을 유지합니다. 띄어쓰기는 반각 공백(8픽셀)입니다.
+캐릭터 이름은 한글화하며, 그 외 영어 메뉴, 영문 부제, 영어 음성을 유지합니다. 띄어쓰기는 반각 공백(8픽셀)입니다.
 한글 검수에서 40구간을 수정했습니다. 기존 자막 표시 명령과 타이밍을 보존했습니다.
 
 완성된 한글 롬을 새로 부팅하고, 게임 안에서 저장 데이터를 불러오세요.
 원본이나 이전 롬의 에뮬레이터 빠른 저장 상태 대신 게임의 저장 기능을 사용하세요.
-새 부팅, 오프닝, 아이템, 실제 저장·새 부팅 불러오기, 엔딩 뒤 저장창을 확인했습니다.
+새 부팅, 오프닝, 아이템, 실제 저장·새 부팅 불러오기, 엔딩 화면을 확인했습니다.
 모든 분기 완주와 일부 저해상도 배경 글씨는 검증을 마치지 않았습니다.
 
-v0.6.1 수정: 지역명 전용 창의 폭을 한글에 맞춰 13개 모두 한 줄로 표시합니다.
-침묵의 숲이 '침묵의'와 '숲'으로 나뉘던 자동 스크롤 오류를 고쳤습니다.
-표시 시간은 원본의 90회 갱신 그대로이며, 다른 253개 해제 자산은 v0.6과 같습니다.
-v0.6이 적용된 롬이 아닌 일본판 원본 롬에 새 패치를 적용하세요.
+v0.65 수정: 종료 확인 문구를 '종료할까요?'로 줄여 창 이탈을 고쳤습니다.
+파일 처리 확인 문구는 '진행할까요?'로 바로잡았습니다.
+캐릭터 이름을 공통 메뉴 테이블에서 한글화하여 선택/일시정지 메뉴에 적용했습니다.
+캐릭터 선택 이름은 초상화 아래 가운데에 맞추고 기존보다 4픽셀 아래에 배치했습니다.
+일시정지 메뉴 이름은 0.9배 축소를 없애 한글 획이 뭉개지는 문제를 수정했습니다.
+전체 934개 원문(중복 포함 1,071구간)을 다시 대조했고, 저장 오류 안내도 다듬었습니다.
+지역명 13개 한 줄 표시와 원본 표시 시간 보존 수정도 포함합니다.
+일본판 원본 롬에 새 패치를 적용하세요.
 
 텍스트 도구는 별도 Text-Tool-v{VERSION}.zip으로 제공됩니다.
 도구에는 Python 3.11 이상과 Pillow가 필요하며, 첫 실행에서 원본 롬을 선택합니다.
@@ -123,11 +122,18 @@ v0.6이 적용된 롬이 아닌 일본판 원본 롬에 새 패치를 적용하�
         ('패치 결과 .z64',TARGET_SHA256),('Windows EXE',sha(exe)),('BPS 패치',manifest['patch_sha256']),('Windows ZIP',sha(patcher_zip))])
     intro=f'''**악마성 드라큘라 묵시록 · N64 일본판 한국어 패치 v{VERSION}**
 
-**v0.6.1 수정:** 첫 지역명 '침묵의 숲'이 두 화면으로 나뉘던 표시 오류를 고쳤습니다. 지역명 13개 모두 실제 한글 폭에 맞춰 한 줄로 표시하며, 원본의 표시 시간은 유지합니다. 오프닝 전체 진행과 13개 지역명 실행에서 자동 스크롤이 사라진 것을 확인했습니다. 일본판 원본에 다시 패치해 주세요.
+**v0.65 수정 사항**
 
-일본어 텍스트 1,067구간과 일본어 로고를 한국어로 바꿨습니다. 컷신은 게임 엔진의 기존 자막 표시·대기 명령과 타이밍을 유지해 한국어로 표시합니다. 영어 메뉴·영문 부제·영어 음성은 보존합니다. 띄어쓰기는 U+0020 반각 공백이며 게임 안에서는 8픽셀입니다.
+- 종료 확인을 **종료할까요?**로 줄여 창 안에 표시합니다. 파일 처리 확인의 잘못된 '사용할까요?'도 **진행할까요?**로 고쳤습니다.
+- 캐릭터 이름을 공통 메뉴 문자열에서 한글화해 선택 화면과 일시정지 메뉴에 적용했습니다. 다른 영어 메뉴·부제·음성은 유지합니다.
+- 선택 화면 이름을 초상화 아래 가운데에 맞추고 **4픽셀 아래로** 내렸습니다.
+- 일시정지 메뉴 이름의 **0.9배 축소를 1배**로 바꾸어 한글 획이 뭉개지는 표시를 수정했습니다.
+- 전체 원문 **934개, 중복 포함 1,071구간**을 다시 대조했습니다. 저장 공간·메모 칸 부족 안내도 고쳤습니다.
+- v0.6.1의 지역명 13개 한 줄 표시 수정을 포함합니다. 원본 표시 시간은 유지합니다.
 
-원문 930개(중복 포함 1,067구간)를 대조했고, 관용구 오역·조사·말더듬·점프 경고·지역명 등을 40구간 수정했습니다.
+일본어 텍스트 1,067구간과 일본어 로고를 한국어로 바꿨으며, 이번 판에는 공통 이름 4개 항목도 한글화했습니다(미사용 이름 2개 포함). 컷신은 게임 엔진의 기존 자막 명령과 타이밍을 유지합니다. 띄어쓰기는 U+0020 반각 공백이며 게임 안에서는 8픽셀입니다.
+
+**일본판 원본에 다시 패치하고 새로 부팅해 주세요.** 게임 안의 저장 기능으로 이어 할 수 있습니다.
 '''
     downloads=f'''Windows 10/11 x64에서는 [EXE 패처]({BASE+exe.name}) 또는 [Windows ZIP]({BASE+patcher_zip.name})을 받으세요. Python 설치 없이 실행합니다. [BPS 단독 패치]({BASE+manifest['patch_file']}), [텍스트 도구]({BASE+editor_zip.name}), [스크린샷 모음]({BASE+screenshots_zip.name}), [SHA256 목록]({BASE+'SHA256SUMS.txt'})도 제공합니다.
 
@@ -141,15 +147,15 @@ v0.6이 적용된 롬이 아닌 일본판 원본 롬에 새 패치를 적용하�
 원본 정규화 **SHA1**: `{SOURCE_SHA1}`
 
 '''
-    validation='''EXE의 실제 패치 실행을 세 가지 바이트 순서로 시험해 같은 결과 해시를 확인했습니다. 잘못된 원본·손상된 패치·원본 및 기존 출력 덮어쓰기를 차단하는 검사, GUI 시작, 텍스트 도구의 동일 결과 재빌드를 통과했습니다.
+    validation='''실제 EXE로 세 가지 바이트 순서의 원본을 패치해 같은 결과 해시를 확인했습니다. 잘못된 원본·손상된 패치·원본 및 기존 출력 덮어쓰기 차단, GUI 시작, 텍스트 도구의 동일 결과 재빌드도 검사했습니다.
 
-254개 자산과 28개 맵 문구 포인터, 폭·페이지·참조·N64 체크섬을 검사했습니다. v0.6에서 새 부팅, 오프닝 자막, 캐리 아이템 메뉴, 실제 저장과 새 부팅 불러오기, 엔딩 뒤 저장창, 수정 컷신을 확인했습니다. v0.6.1은 지역명 표시 폭 테이블만 바뀌었고 다른 253개 해제 자산은 동일합니다. 수정판은 오프닝을 건너뛰지 않은 새 부팅과 지역명 13개를 추가 실행 검증했습니다. 앞선 빌드에서는 두 주인공 × 27개 지역 로딩 및 컷신 54개 진입 조건을 시험했습니다.
+254개 자산과 28개 맵 문구 포인터, 번역 폭·페이지·참조·N64 체크섬을 검사했습니다. 최종 빌드에서 두 캐릭터 새 부팅과 선택 화면, 오프닝, 종료의 예/아니요, 두 캐릭터 아이템 메뉴, 실제 저장과 새 부팅 불러오기, 엔딩과 수정 컷신을 실행했습니다. 지역명 13개도 실행해 자동 스크롤 없이 한 줄로 표시되고 원본의 표시 시간을 유지하는지 확인했습니다.
 
-**확인한 범위에서 추가 일본어 누락은 찾지 못했습니다. 모든 플레이 분기를 처음부터 끝까지 완주한 검증은 아니며, 일부 저해상도 배경 글씨와 모든 이미지 형식의 전수 확인은 마치지 않았습니다.**
+앞선 빌드에서 검사한 두 주인공 × 27개 지역 로딩, 컷신 54개 진입 조건, 문구 누락·텍스처 검수 기록도 보존합니다. **모든 분기를 처음부터 끝까지 완주한 검증은 아닙니다. 일부 저해상도 배경 글씨와 모든 이미지 형식의 전수 확인은 마치지 않았습니다.**
 '''
     def pictures(prefix):
         return '\n'.join('<p><img src="'+prefix+name+'" width="640" height="480" alt="'+label+'"></p>\n\n'+label+'\n'
-                         for name,label in [('06-forest-banner.png','v0.6.1: 한 줄로 표시되는 침묵의 숲'),('02-opening.png','오프닝 한글 자막'),('03-dialogue.png','캐리 대사'),('04-save.png','화이트 주얼 저장창'),('05-inventory.png','아이템 메뉴')])
+                         for name,label in [('07-character-select.png','초상화 아래 가운데 정렬 및 위치 조정'),('08-exit-confirm.png','종료할까요? / 일시정지 메뉴의 한글 이름'),('09-carrie-menu.png','캐리 일시정지 메뉴'),('06-forest-banner.png','한 줄로 표시되는 침묵의 숲'),('02-opening.png','오프닝 한글 자막'),('03-dialogue.png','캐리 대사'),('04-save.png','화이트 주얼 저장창'),('05-inventory.png','아이템 메뉴')])
     title='<p align="center"><img src="docs/screenshots/01-title.png" width="640" height="480" alt="한글 타이틀 화면"></p>\n\n'
     source_notes='''텍스트 도구는 `text-tool/텍스트_도구_실행.cmd`로 실행합니다. Python 3.11 이상과 Pillow가 필요하며, 첫 실행에서 원본을 선택합니다. 원문·번역·ID 검색, 실제 글꼴 미리보기, Ctrl+S 저장, 폭/영문 보존 검증, 롬 빌드를 지원합니다.
 
@@ -157,7 +163,7 @@ v0.6이 적용된 롬이 아닌 일본판 원본 롬에 새 패치를 적용하�
 
 EXE 빌드: `python -m pip install -r requirements-build.txt` 후 `scripts/build_exe.ps1`을 실행합니다. 게임 원본과 완성 롬은 배포 파일에 포함되지 않습니다. 게임의 권리는 원 권리자에게 있습니다.
 
-분해 구조 참고: [k64ret/cv64](https://github.com/k64ret/cv64). 검수 기록은 [docs/proofreading.json](docs/proofreading.json), 검증 기록은 [docs/validation.json](docs/validation.json)에 있습니다.
+분해 구조 참고: [k64ret/cv64](https://github.com/k64ret/cv64). 이번 재검수 기록은 [docs/review-v0.65.json](docs/review-v0.65.json), 이전 검수 기록은 [docs/proofreading.json](docs/proofreading.json), 검증 기록은 [docs/validation.json](docs/validation.json)에 있습니다.
 '''
     (ROOT/'README.md').write_text(title+intro+'\n'+downloads+hash_table+'\n'+validation+'\n'+pictures('docs/screenshots/')+'\n'+source_notes,encoding='utf-8')
     release_title=title.replace('docs/screenshots/01-title.png',RAW+'docs/screenshots/01-title.png')

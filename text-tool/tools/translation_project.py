@@ -6,6 +6,13 @@ import re
 from collections import Counter
 from text_codec import ROOT
 
+# User-requested character names are localized in the shared menu table.
+# Every other Latin word remains subject to the preservation check.
+ENGLISH_LOCALIZATION_EXCEPTIONS={
+    'rom:0F21A8':'Reinhardt', 'rom:0F21BC':'Carrie',
+    'rom:0F21CA':'Cornel', 'rom:0F21D8':'Coller',
+}
+
 
 def read_json(path):return json.loads(Path(path).read_text(encoding='utf-8'))
 
@@ -51,11 +58,13 @@ class Project:
             limit=240
             if s['id'].startswith('rom:') and 0xF1EE4<=int(s['id'].split(':')[1],16)<=0xF20D0:limit=150
             if s['id'] in ('asset_174:0029E8','asset_174:0029FA'):limit=100
-            if s['id']=='asset_174:002A22':limit=128
+            if s['id']=='asset_174:002A22':limit=96
+            if s['id'] in ENGLISH_LOCALIZATION_EXCEPTIONS:limit=96
             if any(line_width(line)>limit for line in t.split('\n')):errors.append((s['id'],f'게임 창의 {limit}픽셀 폭 초과'))
             # Latin runs inside Japanese prose are part of the user's English-preservation requirement.
             source_runs=Counter(re.findall(r'[A-Za-z0-9]*[A-Za-z][A-Za-z0-9]*',re.sub(r'<[0-9A-F]{4}>','',s['source'])))
             target_runs=Counter(re.findall(r'[A-Za-z0-9]*[A-Za-z][A-Za-z0-9]*',t))
+            if ENGLISH_LOCALIZATION_EXCEPTIONS.get(s['id'])==s['source']:continue
             for run,count in source_runs.items():
                 if target_runs[run]<count:errors.append((s['id'],f'영어 보존 확인: {run}'))
         return errors

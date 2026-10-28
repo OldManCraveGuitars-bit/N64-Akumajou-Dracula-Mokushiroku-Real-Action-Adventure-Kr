@@ -30420,5 +30420,72 @@
     "capacity": 31,
     "target": "",
     "status": "pending"
+  },
+  {
+    "id": "rom:0F21A8",
+    "source": "Reinhardt",
+    "words": [
+      52,
+      71,
+      75,
+      80,
+      74,
+      67,
+      84,
+      70,
+      86
+    ],
+    "capacity": 9,
+    "target": "",
+    "status": "pending",
+    "context": "Shared character name in every menu; two unused original name entries included"
+  },
+  {
+    "id": "rom:0F21BC",
+    "source": "Carrie",
+    "words": [
+      37,
+      67,
+      84,
+      84,
+      75,
+      71
+    ],
+    "capacity": 6,
+    "target": "",
+    "status": "pending",
+    "context": "Shared character name in every menu; two unused original name entries included"
+  },
+  {
+    "id": "rom:0F21CA",
+    "source": "Cornel",
+    "words": [
+      37,
+      81,
+      84,
+      80,
+      71,
+      78
+    ],
+    "capacity": 6,
+    "target": "",
+    "status": "pending",
+    "context": "Shared character name in every menu; two unused original name entries included"
+  },
+  {
+    "id": "rom:0F21D8",
+    "source": "Coller",
+    "words": [
+      37,
+      81,
+      78,
+      78,
+      71,
+      84
+    ],
+    "capacity": 6,
+    "target": "",
+    "status": "pending",
+    "context": "Shared character name in every menu; two unused original name entries included"
   }
 ]
